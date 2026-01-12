@@ -1,4 +1,4 @@
-import { ProductItem, ServiceItem } from './../types/product';
+import { ProductItem, ServiceItem, Client } from './../types/product';
 import { Wrench, Ruler, Truck, Settings, Hammer, Headset } from 'lucide-react'
 
 export const pvxProducts: ProductItem[] = [
@@ -220,3 +220,9 @@ export const services: ServiceItem[] = [
         color: "bg-red-100 text-red-600",
     },
 ]
+
+export const clients: Client[] = [
+    { id: 1, name: "Krantash", img: "./customers/krantas.png", color: 'bg-yellow-600' },
+    { id: 2, name: "Sevimli", img: "./customers/sevimli.png", color: "bg-red-500" },
+    { id: 3, name: "Millat umidi", img: './customers/millatumidi.jpg', color: "bg-green-500" },
+];

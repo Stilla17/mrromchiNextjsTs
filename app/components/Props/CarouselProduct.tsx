@@ -39,10 +39,6 @@ const CarouselProduct: React.FC<CarouselProductProps> = ({ title, className, pro
                     }
                 }}
                 navigation
-                // navigation={{
-                //     prevEl: `.swiper-button-prev-custom-${productId}`,
-                //     nextEl: `.swiper-button-next-custom-${productId}`,
-                // }}
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 5000, disableOnInteraction: false }}
                 loop={products.length > 4}

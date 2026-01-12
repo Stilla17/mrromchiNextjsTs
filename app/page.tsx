@@ -1,3 +1,5 @@
+import AboutUs from "./components/AboutUs";
+import Customers from "./components/Customers";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import Products from "./components/Products";
@@ -10,6 +12,8 @@ export default function Home() {
       <HeroSection />
       <Products />
       <Services />
+      <AboutUs />
+      <Customers />
     </main>
   );
 }

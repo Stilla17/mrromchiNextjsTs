@@ -2,7 +2,7 @@
 import React from 'react'
 import { services } from '../data/products'
 
-const Services = () => {
+const Services:React.FC = () => {
     return (
         <section className='max-w-7xl mx-auto px-4 py-24'>
             <h2 className='text-3xl font-bold tracking-tight text-primary text-center md:text-5xl'>Bizning Xizmatlar</h2>

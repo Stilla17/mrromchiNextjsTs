@@ -3,3 +3,11 @@
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
+
+.aboutSection {
+    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuClk-aOuejEmPsJHyNrQZ9k4B2HHJLzFOFmlY6-tBYDFDEc6Qoc48tBsl0i4z1WKyWFbXpB6d4b2znMrQyFXzpSC-hMtfbNg_O5oOVoufNWQQ0Ibiy92o8le3rJkgZ1suDH8pegutoQgd5sVhykfvWy4YVajZ9jhgTiEaOEoHruMg1znxxaza6_x3b8j1Xn7SC5qb6N1OO0BmcQcvKUndQ4kUmhof7iL7qTLEZRa2k0-HBT8EIbD90bf2tGe2LNmHoBpWnnl7XMU4Mh');
+}
+
+.bgTeam {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIDQHc2ux_MPvO6nyJLW2sgeKfn6DlDJNqxu1_GcNIYzAkkptbvaopjWRKDtAgLEi676jVjurXNKX-LNwhw-V-T3ugVlq0QF6UIg0cI_OsVWkTkOo0l8IqBnfp7GWIWSZeJqKkZcNOiHqwqrcI8aqbM9mN04hZWWXbIwut_h2mcFTqqIRDS8RgAKNDzEKZg8xqBxkGlAOdJjestc7xJlkhR85WoraoYZ9jfV8isiAtAuYJKdlKxnI7SbiFb2MjWqGW1cD9RE_EWIg3");
+}

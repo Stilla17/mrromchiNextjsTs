@@ -18,3 +18,10 @@ export interface ServiceItem {
     icon: any;
     color: string;
 }
+
+export type Client = {
+    id: number;
+    name: string;
+    img: string;
+    color: string;
+};
