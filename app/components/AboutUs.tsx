@@ -1,5 +1,6 @@
 import { Users } from 'lucide-react'
 import React from 'react'
+import AnimatedCounter from './Props/AnimatedCounter'
 
 const AboutUs: React.FC = () => {
     return (
@@ -16,15 +17,15 @@ const AboutUs: React.FC = () => {
 
                         <div className="grid grid-cols-2 gap-8 pt-6">
                             <div>
-                                <h4 className="text-3xl font-bold text-white mb-1">6+</h4>
+                                <AnimatedCounter value={6} suffix="+" delay={0} />
                                 <p className="text-sm text-gray-400">Yillik Tajriba</p>
                             </div>
                             <div>
-                                <h4 className="text-3xl font-bold text-white mb-1">100+</h4>
+                                <AnimatedCounter value={100} suffix="+" delay={0} />
                                 <p className="text-sm text-gray-400">Mamnun Mijozlar</p>
                             </div>
                             <div>
-                                <h4 className="text-3xl font-bold text-white mb-1">100%</h4>
+                                <AnimatedCounter value={100} suffix="%" delay={0} />
                                 <p className="text-sm text-gray-400">Sifat Kafolati</p>
                             </div>
                             <div>

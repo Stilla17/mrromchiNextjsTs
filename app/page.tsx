@@ -1,5 +1,7 @@
 import AboutUs from "./components/AboutUs";
+import Contact from "./components/Contact";
 import Customers from "./components/Customers";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import Products from "./components/Products";
@@ -14,6 +16,8 @@ export default function Home() {
       <Services />
       <AboutUs />
       <Customers />
+      <Contact />
+      <Footer />
     </main>
   );
 }

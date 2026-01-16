@@ -10,9 +10,8 @@ const Customers: React.FC = () => {
             <h2 className='text-3xl font-bold tracking-tight text-primary text-center md:text-5xl'>Bizning Mijozlar</h2>
             <p className='mt-4 text-lg text-gray-600 text-center mb-12'>Bizga ishonch bildirgan kompaniyalar</p>
 
-
             <Swiper
-                spaceBetween={40}
+                spaceBetween={50}
                 slidesPerView={3}
                 loop={true}
                 breakpoints={{
@@ -23,7 +22,7 @@ const Customers: React.FC = () => {
                 className="flex items-center"
             >
                 {clients.map((client) => (
-                    <SwiperSlide key={client.id} className="mx-auto ">
+                    <SwiperSlide key={client.id} className="mx-auto">
                         <div className="group flex items-center justify-center gap-4 cursor-pointer transition">
                             <img src={client.img} alt={client.name} className="max-w-40" />
                         </div>
