@@ -23,7 +23,7 @@ const MapLibreMap = () => {
     }, []);
 
     return (
-        <div className="flex items-center">
+        <div className="flex items-center max-md:flex-col max-md:gap-8">
             <div className="bg-white p-10 rounded-lg shadow-2xl">
                 <h2 className="text-3xl font-bold mb-4">Bog'lanish</h2>
                 <p className="mb-4 text-gray-400 text-lg">Savollaringiz bormi? Biz bilan bog'laning va bepul maslahat oling.</p>
