@@ -32,7 +32,7 @@ const AnimatedCounter: React.FC<AnimatedCounterProps> = ({ value, suffix, delay 
     }, [value, delay])
 
     return (
-        <span className="text-3xl font-bold text-white mb-1">
+        <span className="text-3xl font-bold text-white mb-1 max-md:text-[24px]">
             {count}
             {suffix}
         </span>

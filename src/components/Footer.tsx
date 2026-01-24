@@ -1,3 +1,5 @@
+'use client'
+import { navItems } from '@/data/products'
 import { Instagram, Mail, MapPin, Phone, Send } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
@@ -32,6 +34,15 @@ const Footer: React.FC = () => {
                     <div className="lg:col-span-2">
                         <h3 className="font-bold text-white mb-6">Menu</h3>
                         <ul className="space-y-4 text-sm text-gray-400">
+                            <ul className="space-y-4 text-sm text-gray-400">
+                                {
+                                    navItems?.map(item => (
+                                        <Link key={item.href} href={item.href} className="hover:text-black transition">
+                                            {item.key}
+                                        </Link>
+                                    ))
+                                }
+                            </ul>
                             <li><a className="hover:text-white transition-colors" href="#products">Maxsulotlar</a></li>
                             <li><a className="hover:text-white transition-colors" href="#services">Xizmatlar</a></li>
                             <li><a className="hover:text-white transition-colors" href="#about">Biz haqimizda</a></li>
@@ -52,7 +63,8 @@ const Footer: React.FC = () => {
                         <ul className="space-y-4 text-sm text-gray-400">
                             <li className="flex items-center gap-2">
                                 <Phone />
-                                <span>+998 90 933 38 98</span>
+                                <a href="tel:+998909333898">
+                                    <span>+998 90 933 38 98</span></a>
                             </li>
                             <li className="flex items-center gap-2">
                                 <MapPin />

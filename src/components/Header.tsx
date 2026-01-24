@@ -2,9 +2,13 @@
 import React, { useState } from 'react'
 import { Menu } from 'lucide-react';
 import Link from 'next/link'
+import DropdownLang from './Props/DropdownLang';
+import { useTranslation } from 'react-i18next';
+import { navItems } from '@/data/products';
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
+  const { t } = useTranslation()
 
   return (
     <header className="w-full border-b border-gray-200">
@@ -21,27 +25,18 @@ const Header: React.FC = () => {
           </div>
 
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
-            <Link href="#" className="hover:text-black transition">
-              Maxsulotlar
-            </Link>
-            <Link href="#" className="hover:text-black transition">
-              Xizmatlar
-            </Link>
-            <Link href="#" className="hover:text-black transition">
-              Biz haqimizda
-            </Link>
-            <Link href="#" className="hover:text-black transition">
-              Kontakt
-            </Link>
+            {
+              navItems.map((item, index) => (
+                <Link key={item.key} href={item.href} className="hover:text-black transition">
+                  {t(item.key)}
+                </Link>
+              ))
+            }
           </nav>
 
           <div className="items-center gap-4 hidden md:flex">
             <div className='border-r pr-4 border-gray-300'>
-              <select className='focus:outline-none pr-2'>
-                <option value="uz">UZ</option>
-                <option value="ru">RU</option>
-                <option value="en">EN</option>
-              </select>
+              <DropdownLang />
             </div>
 
             <a
@@ -62,15 +57,15 @@ const Header: React.FC = () => {
       {open && (
         <div className="md:hidden border-t border-gray-200 bg-white">
           <nav className="flex flex-col gap-4 px-4 py-6 text-sm font-medium text-gray-700">
-            <Link href="#" onClick={() => setOpen(false)}>Maxsulotlar</Link>
-            <Link href="#" onClick={() => setOpen(false)}>Xizmatlar</Link>
-            <Link href="#" onClick={() => setOpen(false)}>Biz haqimizda</Link>
-            <Link href="#" onClick={() => setOpen(false)}>Kontakt</Link>
+            {
+              navItems?.map(item => (
+                <Link key={item.key} href={item.href} onClick={() => setOpen(false)}>{t(item.key)}</Link>
+
+              ))
+            }
 
             <div className="mt-4 flex flex-col gap-3">
-              <button className="text-left text-sm font-medium">
-                UZ ▾
-              </button>
+              <DropdownLang />
               <a
                 href="tel:+998909333898"
                 className="rounded-xl bg-black px-4 py-3 text-center text-sm font-semibold text-white"
@@ -80,8 +75,9 @@ const Header: React.FC = () => {
             </div>
           </nav>
         </div>
-      )}
-    </header>
+      )
+      }
+    </header >
   )
 }
 

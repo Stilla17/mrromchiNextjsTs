@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import 'i18n';
 import { Plus_Jakarta_Sans } from "next/font/google";
+import I18nProvider from "@/providers/I18nProvider";
 
 export const metadata: Metadata = {
   title: "My App",
@@ -19,7 +21,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className={jakarta.variable}>
       <body style={{ fontFamily: 'var(--font-jakarta)' }}>
-        {children}
+        <I18nProvider>
+          {children}
+        </I18nProvider>
       </body>
     </html>
   );

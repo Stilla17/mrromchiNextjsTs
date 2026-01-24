@@ -226,3 +226,11 @@ export const clients: Client[] = [
     { id: 2, name: "Sevimli", img: "./customers/sevimli.png", color: "bg-red-500" },
     { id: 3, name: "Millat umidi", img: './customers/millatumidi.jpg', color: "bg-green-500" },
 ];
+
+export const navItems = [
+    { href: '/', key: "nav.home" },
+    { href: '#product', key: "Maxsulotlar" },
+    { href: '#services', key: "Xizmatlar" },
+    { href: '#about', key: "Biz haqimizda" },
+    { href: '#contact', key: "Kontakt" },
+]

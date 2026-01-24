@@ -11,3 +11,8 @@
 .bgTeam {
     background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIDQHc2ux_MPvO6nyJLW2sgeKfn6DlDJNqxu1_GcNIYzAkkptbvaopjWRKDtAgLEi676jVjurXNKX-LNwhw-V-T3ugVlq0QF6UIg0cI_OsVWkTkOo0l8IqBnfp7GWIWSZeJqKkZcNOiHqwqrcI8aqbM9mN04hZWWXbIwut_h2mcFTqqIRDS8RgAKNDzEKZg8xqBxkGlAOdJjestc7xJlkhR85WoraoYZ9jfV8isiAtAuYJKdlKxnI7SbiFb2MjWqGW1cD9RE_EWIg3");
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}

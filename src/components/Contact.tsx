@@ -1,37 +1,29 @@
-"use client"; // Client component
+'use client'
 
-import { useEffect } from "react";
-import { Map, Marker } from "@maptiler/sdk";
-import "@maptiler/sdk/dist/maptiler-sdk.css";
+import React from 'react'
+import MapLibreMap from './MapLibreMap'
 import { MapPin, Phone, Send, Instagram } from "lucide-react";
+import { InputMask } from 'primereact/inputmask'
 
-const MapLibreMap = () => {
-    useEffect(() => {
-        const map = new Map({
-            container: "map",
-            apiKey: process.env.NEXT_PUBLIC_MAPTILER_API_KEY!,
-            style: "streets-v2",
-            center: [69.214229, 41.346035],
-            zoom: 15,
-        });
-
-        new Marker()
-            .setLngLat([69.214229, 41.346035])
-            .addTo(map);
-
-        return () => map.remove();
-    }, []);
-
+const Contact: React.FC = () => {
     return (
-        <div className="flex items-center max-md:flex-col max-md:gap-8">
+        <section className='max-w-7xl mx-auto px-4 py-24 flex items-center max-md:flex-col max-md:gap-8'>
             <div className="bg-white p-10 rounded-lg shadow-2xl">
                 <h2 className="text-3xl font-bold mb-4">Bog'lanish</h2>
                 <p className="mb-4 text-gray-400 text-lg">Savollaringiz bormi? Biz bilan bog'laning va bepul maslahat oling.</p>
 
                 <form className="mb-6">
-                    <input type="email" placeholder="Pochtangizni kiriting" className="block text-[18px] w-full border px-4 py-2 mb-4 rounded-lg border-gray-300" />
-                    <input type="text" placeholder="Tel raqamingizni kiriting" className="block text-[18px] w-full border px-4 py-2 mb-4 rounded-lg border-gray-300" />
-                    <button className="bg-black text-white rounded-md p-2 w-full">Jo'natish</button>
+                    <input type="email"
+                        placeholder="Pochtangizni kiriting"
+                        className="block text-[18px] w-full border px-4 py-2 mb-4 rounded-lg border-gray-300 focus:outline-none" />
+
+                    <InputMask
+                        mask="+(998) 99 999 99 99"
+                        placeholder="+998"
+                        className="block text-[18px] w-full border px-4 py-2 rounded-lg border-gray-300 focus:outline-none"
+                    />
+
+                    <button className="bg-black text-white rounded-md p-2 mt-4 w-full">Jo'natish</button>
                 </form>
 
                 <div className="grid grid-cols-2 gap-6">
@@ -83,9 +75,9 @@ const MapLibreMap = () => {
                 </div>
 
             </div>
-            <div id="map" className="w-full h-125"></div>
-        </div>
-    );
+            <MapLibreMap />
+        </section>
+    )
 }
 
-export default MapLibreMap
+export default Contact
