@@ -229,8 +229,8 @@ export const clients: Client[] = [
 
 export const navItems = [
     { href: '/', key: "nav.home" },
-    { href: '#product', key: "Maxsulotlar" },
-    { href: '#services', key: "Xizmatlar" },
-    { href: '#about', key: "Biz haqimizda" },
-    { href: '#contact', key: "Kontakt" },
+    { href: '#product', key: "nav.products" },
+    { href: '#services', key: "nav.services" },
+    { href: '#about', key: "nav.about" },
+    { href: '#contact', key: "nav.contact" },
 ]

@@ -5,33 +5,38 @@ import Link from 'next/link'
 import DropdownLang from './Props/DropdownLang';
 import { useTranslation } from 'react-i18next';
 import { navItems } from '@/data/products';
+import Image from 'next/image';
+import logo from './../../public/mr_romchi.png';
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
   const { t } = useTranslation()
-
   return (
     <header className="w-full border-b border-gray-200">
       <div className="mx-auto max-w-7xl px-4">
         <div className="flex h-16 items-center justify-between">
 
           <div className="flex items-center gap-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-black text-white">
-              💎
-            </div>
-            <span className="text-lg font-semibold">
-              Mrrochi
-            </span>
+            <Image
+              width={50}
+              src={logo}
+              alt='Mr Romchi - Sifatli xizmatlar'
+              priority />
+            <p className='font-bold text-[22px]'><span className='text-[#94813d]'>Mr</span> Romchi</p>
           </div>
 
-          <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
-            {
-              navItems.map((item, index) => (
-                <Link key={item.key} href={item.href} className="hover:text-black transition">
-                  {t(item.key)}
-                </Link>
-              ))
-            }
+          <nav aria-label="Asosiy menyu" >
+            <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+              {
+                navItems.map((item, index) => (
+                  <li key={item.key}>
+                    <Link href={item.href} className="hover:text-[#94813d] transition ">
+                      {t(item.key)}
+                    </Link>
+                  </li>
+                ))
+              }
+            </ul>
           </nav>
 
           <div className="items-center gap-4 hidden md:flex">

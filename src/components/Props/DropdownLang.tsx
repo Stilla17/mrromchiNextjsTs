@@ -36,11 +36,10 @@ const DropdownLang: React.FC = () => {
 
 
     return (
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1">
             <img
                 src={countries.find(c => c.code === lang)?.flag}
                 alt={lang}
-                className="h-5 w-5 rounded-full"
             />
 
             <select

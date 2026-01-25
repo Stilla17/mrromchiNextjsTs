@@ -1,5 +1,10 @@
 {
     "nav": {
-        "home": "Bosh sahifa"
-    }
+        "home": "Bosh sahifa",
+        "products": "Maxsulotlar",
+        "services": "Xizmatlar",
+        "about": "Biz haqimizda",
+        "contact": "Kontakt"
+    },
+    "header": {}
 }

@@ -3,20 +3,17 @@ import { navItems } from '@/data/products'
 import { Instagram, Mail, MapPin, Phone, Send } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Footer: React.FC = () => {
+    const { t } = useTranslation()
 
     return (
         <footer className="bg-primary pt-20 pb-10 text-white bg-black border-t border-white/10 dark:border-gray-800">
             <div className="max-w-7xl mx-auto ">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
                     <div className="lg:col-span-4 flex flex-col gap-6">
-                        <div className="flex items-center gap-2">
-                            <div className="bg-white p-2 rounded text-primary">
-                                💎
-                            </div>
-                            <span className="text-2xl font-bold">Mrrochi</span>
-                        </div>
+                        <p className='font-bold text-[22px]'><span className='text-[#94813d]'>Mr</span> Romchi</p>
                         <p className="text-gray-400 leading-relaxed max-w-sm">
                             Har bir xonadon uchun sifat va ishonch. Bizning maqsadimiz — uyingizni yanada qulay va
                             ko'rkam qilishdir.
@@ -34,19 +31,15 @@ const Footer: React.FC = () => {
                     <div className="lg:col-span-2">
                         <h3 className="font-bold text-white mb-6">Menu</h3>
                         <ul className="space-y-4 text-sm text-gray-400">
-                            <ul className="space-y-4 text-sm text-gray-400">
-                                {
-                                    navItems?.map(item => (
-                                        <Link key={item.href} href={item.href} className="hover:text-black transition">
-                                            {item.key}
+                            {
+                                navItems?.map(item => (
+                                    <li key={item.href}>
+                                        <Link href={item.href} className="hover:text-white transition-colors">
+                                            {t(item.key)}
                                         </Link>
-                                    ))
-                                }
-                            </ul>
-                            <li><a className="hover:text-white transition-colors" href="#products">Maxsulotlar</a></li>
-                            <li><a className="hover:text-white transition-colors" href="#services">Xizmatlar</a></li>
-                            <li><a className="hover:text-white transition-colors" href="#about">Biz haqimizda</a></li>
-                            <li><a className="hover:text-white transition-colors" href="#contact">Kontakt</a></li>
+                                    </li>
+                                ))
+                            }
                         </ul>
                     </div>
                     <div className="lg:col-span-3">

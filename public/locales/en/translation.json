@@ -1,5 +1,10 @@
 {
     "nav": {
-        "home": "Home"
-    }
+        "home": "Home",
+        "products": "Products",
+        "services": "Services",
+        "about": "About Us",
+        "contact": "Contact"
+    },
+    "header": {}
 }
