@@ -18,6 +18,10 @@ if (!i18n.isInitialized) {
         interpolation: {
             escapeValue: false,
         },
+        react: {
+            transSupportBasicHtmlNodes: true,
+            transKeepBasicHtmlNodesFor: ["br", "strong", "i", "b", "span"],
+        },
     });
 }
 

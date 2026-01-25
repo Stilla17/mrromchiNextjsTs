@@ -6,5 +6,11 @@
         "about": "About Us",
         "contact": "Contact"
     },
-    "header": {}
+    "header": {
+        "title": "Perfect quality <br /> <highlight>For your home</highlight>",
+        "subtitle": "The Mr Romchi brand offers you the most modern and high-quality doors and frames. Entrust your home to reliable hands.",
+        "premium": "Premium Frames and Doors",
+        "catalog": "View Catalog",
+        "contact": "Contact"
+    }
 }

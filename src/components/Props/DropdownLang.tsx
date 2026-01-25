@@ -45,10 +45,10 @@ const DropdownLang: React.FC = () => {
             <select
                 value={lang}
                 onChange={handleChange}
-                className="bg-transparent text-sm font-medium outline-none cursor-pointer"
+                className="bg-transparent text-sm font-medium outline-none cursor-pointer "
             >
                 {countries.map((country) => (
-                    <option key={country.code} value={country.code}>
+                    <option key={country.code} value={country.code} className='text-black'>
                         {country.name}
                     </option>
                 ))}

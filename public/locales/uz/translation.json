@@ -6,5 +6,11 @@
         "about": "Biz haqimizda",
         "contact": "Kontakt"
     },
-    "header": {}
+    "header": {
+        "title": "Uyingiz uchun <br /> <highlight>Mukammal Sifat</highlight>",
+        "subtitle": "Mr Romchi brendi sizga eng zamonaviy va sifatli eshik va romlarini taqdim etadi. O'z uyingizni ishonchli qo'llarga topshiring.",
+        "premium": "Premium Rom va Eshiklar",
+        "catalog": "Katalogni ko‘rish",
+        "contact": "Bog'lanish"
+    }
 }

@@ -6,13 +6,14 @@ import DropdownLang from './Props/DropdownLang';
 import { useTranslation } from 'react-i18next';
 import { navItems } from '@/data/products';
 import Image from 'next/image';
-import logo from './../../public/mr_romchi.png';
+// import logo from './../../public/mr_romchi.png';
+import logo from './../../public/icon.png';
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
   const { t } = useTranslation()
   return (
-    <header className="w-full border-b border-gray-200">
+    <div className="w-full text-white py-4">
       <div className="mx-auto max-w-7xl px-4">
         <div className="flex h-16 items-center justify-between">
 
@@ -26,7 +27,7 @@ const Header: React.FC = () => {
           </div>
 
           <nav aria-label="Asosiy menyu" >
-            <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+            <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-white-700">
               {
                 navItems.map((item, index) => (
                   <li key={item.key}>
@@ -60,14 +61,18 @@ const Header: React.FC = () => {
         </div>
       </div>
       {open && (
-        <div className="md:hidden border-t border-gray-200 bg-white">
-          <nav className="flex flex-col gap-4 px-4 py-6 text-sm font-medium text-gray-700">
-            {
-              navItems?.map(item => (
-                <Link key={item.key} href={item.href} onClick={() => setOpen(false)}>{t(item.key)}</Link>
+        <div className="md:hidden">
+          <nav className="px-4 py-6 text-sm font-medium text-white">
+            <ul className='flex flex-col gap-4'>
+              {
+                navItems?.map(item => (
+                  <li key={item.key}>
+                    <Link href={item.href} onClick={() => setOpen(false)} className="hover:text-[#94813d] transition">{t(item.key)}</Link>
+                  </li>
 
-              ))
-            }
+                ))
+              }
+            </ul>
 
             <div className="mt-4 flex flex-col gap-3">
               <DropdownLang />
@@ -82,7 +87,7 @@ const Header: React.FC = () => {
         </div>
       )
       }
-    </header >
+    </div >
   )
 }
 
