@@ -6,7 +6,6 @@ import DropdownLang from './Props/DropdownLang';
 import { useTranslation } from 'react-i18next';
 import { navItems } from '@/data/products';
 import Image from 'next/image';
-// import logo from './../../public/mr_romchi.png';
 import logo from './../../public/icon.png';
 
 const Header: React.FC = () => {

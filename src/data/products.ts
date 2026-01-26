@@ -233,4 +233,11 @@ export const navItems = [
     { href: '#services', key: "nav.services" },
     { href: '#about', key: "nav.about" },
     { href: '#contact', key: "nav.contact" },
+];
+
+export const slides = [
+    '/images/header_bg1.png',
+    '/images/header_bg2.png',
+    '/images/header_bg3.png',
+    '/images/header_bg4.png',
 ]
