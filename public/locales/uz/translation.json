@@ -12,5 +12,45 @@
         "premium": "Premium Rom va Eshiklar",
         "catalog": "Katalogni ko‘rish",
         "contact": "Bog'lanish"
+    },
+    "products": {
+        "title": "Bizning Mahsulotlar",
+        "subtitle": "Yuqori sifatli PVX va Alyuminiy profillari",
+        "pvx": "PVX Profillar",
+        "alumin": "Alyumin Profillar",
+        "sliding": "Surma Profillar",
+        "fasad": "Fasad Profillar",
+        "newSystem": "Yangi Sistema",
+        "others": "Boshqa Maxsulotlar"
+    },
+    "services": {
+        "title": "Bizning Xizmatlar",
+        "subtitle": "Biz sizga to'liq sikldagi xizmatlarni taklif etamiz",
+        "items": {
+            "1": {
+                "title": "Eshik va rom yasash",
+                "description": "Sizning o'lchamlaringiz va talablaringiz asosida individual buyurtma."
+            },
+            "2": {
+                "title": "Tamirlash",
+                "description": "Eski romlarni ta'mirlash va yangilash xizmati."
+            },
+            "3": {
+                "title": "O'lchash",
+                "description": "Mutaxassislarimiz bepul borib o'lchov ishlarini amalga oshiradilar."
+            },
+            "4": {
+                "title": "O'rnatib berish",
+                "description": "Tajribali ustalarimiz tomonidan sifatli o'rnatish xizmati."
+            },
+            "5": {
+                "title": "Texnik maslahat",
+                "description": "Materiallar va dizayn bo'yicha bepul professional maslahat."
+            },
+            "6": {
+                "title": "Yetkazib berish",
+                "description": "Tayyor mahsulotlarni manzilingizga xavfsiz yetkazib beramiz."
+            }
+        }
     }
 }

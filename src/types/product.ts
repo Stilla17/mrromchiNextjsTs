@@ -25,3 +25,8 @@ export type Client = {
     img: string;
     color: string;
 };
+
+export interface Title {
+    title: string;
+    subtitle: string;
+}

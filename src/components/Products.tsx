@@ -1,19 +1,23 @@
+'use client'
 import React from 'react'
 import CarouselProduct from './Props/CarouselProduct'
 import { pvxProducts, alyuminProducts, razdvijnoyProducts, fasadProducts, newSystemProducts, otherProducts } from '../data/products'
+import { useTranslation } from 'react-i18next'
+import TitleTexts from './Props/TitleTexts'
 
 const Products: React.FC = () => {
+    const { t } = useTranslation()
     return (
-        <section className='max-w-7xl mx-auto px-4 py-24'>
-            <h2 className='text-3xl font-bold tracking-tight text-primary text-center md:text-5xl'>Bizning Mahsulotlar</h2>
-            <p className='mt-4 text-lg text-gray-600 text-center'>Yuqori sifatli PVX va Alyuminiy profillari</p>
+        <section className='max-w-7xl mx-auto px-4 max-md:mt-8'>
 
-            <CarouselProduct title='PVX Profillari' className='bg-blue-600' products={pvxProducts} />
-            <CarouselProduct title='Alyumin Profillari' className='bg-red-600' products={alyuminProducts} />
-            <CarouselProduct title='Razdvijnoy Profillari' className='bg-green-600' products={razdvijnoyProducts} />
-            <CarouselProduct title='Fasad Profillari' className='bg-yellow-600' products={fasadProducts} />
-            <CarouselProduct title='Yangi Sistema' className='bg-yellow-600' products={newSystemProducts} />
-            <CarouselProduct title='Boshqa Maxsulotlar' className='bg-yellow-600' products={otherProducts} />
+            <TitleTexts title={t('products.title')} subtitle={t('products.subtitle')} />
+
+            <CarouselProduct title={t('products.pvx')} className='bg-blue-600' products={pvxProducts} />
+            <CarouselProduct title={t('products.alumin')} className='bg-red-600' products={alyuminProducts} />
+            <CarouselProduct title={t('products.sliding')} className='bg-green-600' products={razdvijnoyProducts} />
+            <CarouselProduct title={t('products.fasad')} className='bg-yellow-600' products={fasadProducts} />
+            <CarouselProduct title={t('products.newSystem')} className='bg-yellow-600' products={newSystemProducts} />
+            <CarouselProduct title={t('products.others')} className='bg-yellow-600' products={otherProducts} />
 
         </section>
     )

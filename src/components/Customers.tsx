@@ -1,8 +1,7 @@
 'use client'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { clients } from "../data/products";
-
+import { clients } from "@/data/products";
 
 const Customers: React.FC = () => {
     return (

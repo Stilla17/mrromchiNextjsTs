@@ -1,6 +1,5 @@
 'use client'
 import { Phone } from 'lucide-react'
-import Link from 'next/link'
 import React from 'react'
 import Header from './Header'
 import { Trans, useTranslation } from 'react-i18next'
@@ -11,7 +10,7 @@ import { slides } from '@/data/products'
 const HeroSection: React.FC = () => {
     const { t } = useTranslation()
     return (
-        <header className="relative w-full overflow-hidden">
+        <header className="relative w-full overflow-hidden max-md:pb-12">
             <div className="absolute inset-0 -z-10">
                 <Swiper
                     modules={[Autoplay]}
@@ -23,7 +22,7 @@ const HeroSection: React.FC = () => {
                     {slides.map((img, index) => (
                         <SwiperSlide key={index}>
                             <div
-                                className="h-screen w-full bg-cover bg-center"
+                                className="h-screen w-full bg-cover bg-center max-md:h-full max-md:bg-fixed"
                                 style={{ backgroundImage: `url(${img})` }}
                             />
                         </SwiperSlide>
@@ -34,7 +33,7 @@ const HeroSection: React.FC = () => {
             <div className='relative z-10'>
 
                 <Header />
-                <div className=" mx-auto max-w-7xl px-4 md:py-32">
+                <div className="mx-auto max-w-7xl px-4 md:py-32 max-md:mt-8">
                     <div className="max-w-2xl">
 
                         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs text-white">
@@ -54,7 +53,7 @@ const HeroSection: React.FC = () => {
                             />
                         </h1>
 
-                        <p className="mt-6 max-w-125 text-sm leading-relaxed text-gray-400 sm:text-base">
+                        <p className="mt-6 max-w-125 text-sm leading-relaxed text-gray-400 sm:text-base max-md:text-white">
                             {t("header.subtitle")}
                         </p>
 

@@ -12,5 +12,45 @@
         "premium": "Premium Frames and Doors",
         "catalog": "View Catalog",
         "contact": "Contact"
+    },
+    "products": {
+        "pvx": "PVC Profiles",
+        "alumin": "Aluminum Profiles",
+        "sliding": "Sliding Profiles",
+        "fasad": "Facade Profiles",
+        "newSystem": "New System",
+        "others": "Other Products",
+        "title": "Our Products",
+        "subtitle": "High-quality PVC and Aluminum profiles"
+    },
+    "services": {
+        "title": "Our Services",
+        "subtitle": "We offer you full-cycle services",
+        "items": {
+            "1": {
+                "title": "Door and Frame Manufacturing",
+                "description": "Custom orders based on your dimensions and requirements."
+            },
+            "2": {
+                "title": "Repair",
+                "description": "Service for repairing and updating old frames."
+            },
+            "3": {
+                "title": "Measurement",
+                "description": "Our specialists will come and perform measurements for free."
+            },
+            "4": {
+                "title": "Installation",
+                "description": "Quality installation service by experienced craftsmen."
+            },
+            "5": {
+                "title": "Technical Consultation",
+                "description": "Free professional advice on materials and design."
+            },
+            "6": {
+                "title": "Delivery",
+                "description": "We deliver finished products safely to your address."
+            }
+        }
     }
 }

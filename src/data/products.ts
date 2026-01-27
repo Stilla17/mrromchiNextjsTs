@@ -44,19 +44,19 @@ export const alyuminProducts: ProductItem[] = [
     {
         id: 3,
         name: 'Termo 7000',
-        img: 'https://alsys.uz/wp-content/uploads/2020/10/thermo-1.png',
+        img: '/productsImg/bkt70.png',
         description: 'Description for Aluminum Product 3',
     },
     {
         id: 4,
         name: 'Termo 5700',
-        img: 'https://alsys.uz/wp-content/uploads/2020/10/thermo-1.png',
+        img: '/productsImg/termo5700.jpg',
         description: 'Description for Aluminum Product 3',
     },
     {
         id: 5,
         name: 'Termo 9800',
-        img: 'https://alsys.uz/wp-content/uploads/2020/10/thermo-1.png',
+        img: '/productsImg/bkt98.png',
         description: 'Description for Aluminum Product 3',
     }
 ]
@@ -71,7 +71,7 @@ export const razdvijnoyProducts: ProductItem[] = [
     {
         id: 2,
         name: 'Bkx 38',
-        img: 'https://akfagroup.com/img/src/functional/bkh65.png',
+        img: '/productsImg/bkx38.jpg',
         description: 'Description for Sliding Product 2',
     }
 ]
@@ -86,13 +86,13 @@ export const fasadProducts: ProductItem[] = [
     {
         id: 2,
         name: 'Bkf 50',
-        img: 'https://akfagroup.com/img/src/functional/bkf_max.png',
+        img: '/productsImg/bkf50.jpg',
         description: 'Description for Facade Product 1',
     },
     {
         id: 3,
         name: 'Pauk sistema',
-        img: 'https://s.alicdn.com/@sc04/kf/H1107b2ca45344923b76493fe4e71dfdad/Frameless-Shopping-Mall-Geometric-Aluminium-Facade-Louvers-Aluminium-Building-Facade-External-Spider-Aluminium-Glass-Facade.png_300x300.jpg',
+        img: '/productsImg/spidersystem.jpg',
         description: 'Description for Facade Product 2',
     }
 
@@ -102,13 +102,13 @@ export const newSystemProducts: ProductItem[] = [
     {
         id: 1,
         name: 'Rolstavniy',
-        img: 'https://alutech.uz/upload/resize_cache/webp/iblock/8d9/8d9748d8ce3ab466f12dca0483a29b7a.webp',
+        img: '/productsImg/rolsatvdoor.jpeg',
         description: 'Description for New System Product 1',
     },
     {
         id: 2,
         name: 'Sekshionniy',
-        img: 'https://alutech.uz/upload/resize_cache/webp/iblock/8d9/8d9748d8ce3ab466f12dca0483a29b7a.webp',
+        img: '/productsImg/sektiondoor.jpg',
         description: 'Description for New System Product 2',
     },
     {
@@ -120,13 +120,13 @@ export const newSystemProducts: ProductItem[] = [
     {
         id: 4,
         name: 'Gelatina',
-        img: 'https://alutech.uz/upload/resize_cache/webp/iblock/8d9/8d9748d8ce3ab466f12dca0483a29b7a.webp',
+        img: '/productsImg/gelatina.jpeg',
         description: 'Description for New System Product 4',
     },
     {
         id: 5,
         name: 'Pergola',
-        img: 'https://alutech.uz/upload/resize_cache/webp/iblock/8d9/8d9748d8ce3ab466f12dca0483a29b7a.webp',
+        img: '/productsImg/pergola.jpg',
         description: 'Description for New System Product 5',
     },
     {
@@ -179,43 +179,43 @@ export const otherProducts: ProductItem[] = [
 export const services: ServiceItem[] = [
     {
         id: 1,
-        title: "Eshik rom yasash",
-        description: "Sizning o'lchamlaringiz va talablaringiz asosida individual buyurtma.",
+        title: "services.items.1.title",
+        description: "services.items.1.description",
         icon: Settings,
         color: "bg-blue-100 text-blue-600",
     },
     {
         id: 2,
-        title: "Temirlash",
-        description: "Eski romlarni ta'mirlash va yangilash xizmati.",
+        title: "services.items.2.title",
+        description: "services.items.2.description",
         icon: Wrench,
         color: "bg-green-100 text-green-600",
     },
     {
         id: 3,
-        title: "O'lchash",
-        description: "Mutaxassislarimiz bepul borib o'lchov ishlarini amalga oshiradilar.",
+        title: "services.items.3.title",
+        description: "services.items.3.description",
         icon: Ruler,
         color: "bg-purple-100 text-purple-600",
     },
     {
         id: 4,
-        title: "O'rnatib berish",
-        description: "Tajribali ustalarimiz tomonidan sifatli o'rnatish xizmati.",
+        title: "services.items.4.title",
+        description: "services.items.4.description",
         icon: Hammer,
         color: "bg-orange-100 text-orange-600",
     },
     {
         id: 5,
-        title: "Texnik maslahat",
-        description: "Materiallar va dizayn bo'yicha bepul professional maslahat.",
+        title: "services.items.5.title",
+        description: "services.items.5.description",
         icon: Headset,
         color: "bg-teal-100 text-teal-600",
     },
     {
         id: 6,
-        title: "Yetkazib berish",
-        description: "Tayyor mahsulotlarni manzilingizga xavfsiz yetkazib beramiz.",
+        title: "services.items.6.title",
+        description: "services.items.6.description",
         icon: Truck,
         color: "bg-red-100 text-red-600",
     },
@@ -225,6 +225,7 @@ export const clients: Client[] = [
     { id: 1, name: "Krantash", img: "./customers/krantas.png", color: 'bg-yellow-600' },
     { id: 2, name: "Sevimli", img: "./customers/sevimli.png", color: "bg-red-500" },
     { id: 3, name: "Millat umidi", img: './customers/millatumidi.jpg', color: "bg-green-500" },
+    { id: 4, name: "King Plov", img: './customers/kingPlov.jpg', color: "bg-green-500" },
 ];
 
 export const navItems = [

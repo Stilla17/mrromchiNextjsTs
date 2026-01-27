@@ -1,12 +1,15 @@
 'use client'
 import React from 'react'
 import { services } from '../data/products'
+import { useTranslation } from 'react-i18next'
+import TitleTexts from './Props/TitleTexts'
 
-const Services:React.FC = () => {
+const Services: React.FC = () => {
+    const { t } = useTranslation()
+
     return (
-        <section className='max-w-7xl mx-auto px-4 py-24'>
-            <h2 className='text-3xl font-bold tracking-tight text-primary text-center md:text-5xl'>Bizning Xizmatlar</h2>
-            <p className='mt-4 text-lg text-gray-600 text-center'>Biz sizga to'liq sikldagi xizmatlarni taklif etamiz</p>
+        <section className='max-w-7xl mx-auto px-4 mt-4'>
+            <TitleTexts title={t('services.title')} subtitle={t('services.subtitle')} />
 
             <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {services.map((service) => {
@@ -36,11 +39,11 @@ const Services:React.FC = () => {
                             </div>
 
                             <h3 className="mt-6 text-xl font-semibold text-gray-900">
-                                {service.title}
+                                {t(service.title)}
                             </h3>
 
                             <p className="mt-3 text-gray-600 leading-relaxed">
-                                {service.description}
+                                {t(service.description)}
                             </p>
                         </div>
                     )

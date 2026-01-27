@@ -60,7 +60,7 @@ const Header: React.FC = () => {
         </div>
       </div>
       {open && (
-        <div className="md:hidden">
+        <div className="md:hidden max-md:bg-white/20">
           <nav className="px-4 py-6 text-sm font-medium text-white">
             <ul className='flex flex-col gap-4'>
               {

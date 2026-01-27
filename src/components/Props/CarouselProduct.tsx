@@ -13,13 +13,13 @@ const CarouselProduct: React.FC<CarouselProductProps> = ({ title, className, pro
     return (
         <div>
             <div className='flex justify-between items-center '>
-                <h3 className='text-2xl font-bold text-primary flex items-center gap-2'>
+                <h3 className='text-2xl font-bold text-primary flex items-center gap-2 max-md:text-xl'>
                     <span className={`w-1.5 h-8 ${className} rounded-full block`}></span>
                     {title}
                 </h3>
                 <div className='flex gap-4 items-center'>
-                    <button ref={prevRef} className={`p-4 rounded-full border border-gray-400 cursor-pointer`}><ArrowLeft /></button>
-                    <button ref={nextRef} className={`p-4 rounded-full border border-gray-400 cursor-pointer`}><ArrowRight /></button>
+                    <button ref={prevRef} className={`p-4 rounded-full border border-gray-400 cursor-pointer max-md:p-2`}><ArrowLeft /></button>
+                    <button ref={nextRef} className={`p-4 rounded-full border border-gray-400 cursor-pointer max-md:p-2`}><ArrowRight /></button>
                 </div>
             </div>
 
@@ -50,11 +50,11 @@ const CarouselProduct: React.FC<CarouselProductProps> = ({ title, className, pro
                                 <img
                                     src={product.img}
                                     alt={product.name}
-                                    className="w-full h-64 object-cover transition-transform duration-500 hover:scale-105"
+                                    className="w-full h-64 object-contain transition-transform duration-500 hover:scale-105"
                                 />
                             </div>
                             <div className="p-6 ">
-                                <h4 className="text-xl font-semibold text-gray-800">
+                                <h4 className="text-xl font-semibold text-gray-800 max-md:text-lg">
                                     {product.name}
                                 </h4>
                                 <p className="text-gray-600 mt-2 text-[14px]">{product.description}</p>
