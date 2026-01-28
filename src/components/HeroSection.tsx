@@ -59,7 +59,7 @@ const HeroSection: React.FC = () => {
 
                         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                             <a
-                                href="https://drive.google.com/file/d/1zsZUQFjZjH37fBFyP7ZzT7m2_H086kTh/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1cf3CmaH90Yy4SnUy0ZgXAtxNrueUdjAD/view?usp=sharing"
                                 aria-label="Mr Romchi katalogini yuklab olish"
                                 className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition hover:bg-gray-200"
                             >
