@@ -23,7 +23,7 @@ const MapLibreMap = () => {
     }, []);
 
     return (
-        <div id="map" className="w-full h-125"></div>
+        <div id="map" className="w-full h-120 rounded-2xl"></div>
     );
 }
 

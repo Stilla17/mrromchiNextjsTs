@@ -8,7 +8,7 @@ const Services: React.FC = () => {
     const { t } = useTranslation()
 
     return (
-        <section className='max-w-7xl mx-auto px-4 mt-4'>
+        <section className='max-w-7xl mx-auto px-4 mt-4 mb-16'>
             <TitleTexts title={t('services.title')} subtitle={t('services.subtitle')} />
 
             <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

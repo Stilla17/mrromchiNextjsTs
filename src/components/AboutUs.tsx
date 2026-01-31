@@ -34,10 +34,10 @@ const AboutUs: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-100 relative max-md:w-100">
+                    <div className="w-150 relative max-sm:max-w-full">
                         <div className="relative z-10 rounded-3xl bg-white p-8 shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
 
-                            <div className="bg-cover bg-no-repeat aspect-4/3 rounded-xl bg-gray-200 overflow-hidden bgTeam"></div>
+                            <div className="bg-cover bg-no-repeat aspect-4/3 rounded-xl bg-gray-200 overflow-hidden bgTeam "></div>
 
                             <div className="mt-6 flex items-center justify-between">
                                 <div>
@@ -55,7 +55,7 @@ const AboutUs: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className="absolute -bottom-6 -right-6 h-full w-full rounded-3xl border-2 border-white/30 z-0"></div>
+                        <div className="absolute -bottom-6 -right-6 h-full w-full rounded-3xl border-2 border-white/30 z-0 max-md:hidden"></div>
                     </div>
                 </div>
             </div>

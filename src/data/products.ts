@@ -31,8 +31,8 @@ export const pvxProducts: ProductItem[] = [
 export const alyuminProducts: ProductItem[] = [
     {
         id: 1,
-        name: 'Aldoks',
-        img: './productsImg/aldoks.png',
+        name: 'Aldox',
+        img: './productsImg/aldox.png',
         description: 'Description for Aluminum Product 1',
     },
     {
@@ -132,7 +132,7 @@ export const newSystemProducts: ProductItem[] = [
     {
         id: 6,
         name: 'Markiza',
-        img: '/images/products/new6.jpg',
+        img: '/productsImg/markizy-glavnaya.jpeg',
         description: 'Description for New System Product 6',
     }
 ]
@@ -141,37 +141,37 @@ export const otherProducts: ProductItem[] = [
     {
         id: 1,
         name: 'San-uzel',
-        img: 'https://pechenyi.com/info/sanuzel-63-1.jpg',
+        img: '/productsImg/san_uzel.jpeg',
         description: 'Description for Other Product 1',
     },
     {
         id: 2,
         name: 'Perila',
-        img: 'https://metalix.uz/wp-content/uploads/2024/05/8-4-scaled.jpg',
+        img: '/productsImg/perila.jpeg',
         description: 'Description for Other Product 2',
     },
     {
         id: 3,
         name: 'Podokonnik',
-        img: 'https://remontokon24.by/wp-content/uploads/2020/09/podokonnik-danke1-e1604754683527.jpg',
+        img: '/productsImg/podokonnik.png',
         description: 'Description for Other Product 3',
     },
     {
         id: 4,
         name: 'Moskitnaya setka',
-        img: 'https://vikna.ua/wp-content/uploads/2017/07/IMG_1595_result.jpg',
+        img: '/productsImg/setka.png',
         description: 'Description for Other Product 4',
     },
     {
         id: 5,
         name: 'Peregorodka',
-        img: 'https://admin.estetdveri.ru/upload/iblock/8fa/4maaucyzk2a4qp3zvtqfv777l7b2qr9t.webp',
+        img: '/productsImg/peregarodka.jpeg',
         description: 'Description for Other Product 5',
     },
     {
         id: 6,
         name: 'Zimniy sad',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTpgHoIJW_f2MpyqwvQfQdNSzEv4bPUN5D4A&s',
+        img: '/productsImg/wintergarden.png',
         description: 'Description for Other Product 6',
     }
 ]
@@ -237,8 +237,7 @@ export const navItems = [
 ];
 
 export const slides = [
-    '/images/header_bg1.png',
-    '/images/header_bg2.png',
-    '/images/header_bg3.png',
-    '/images/header_bg4.png',
+    '/images/headerbg1.jpg',
+    '/images/headerbg2.jpg',
+    '/images/headerbg3.jpg',
 ]

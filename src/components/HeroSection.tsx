@@ -29,6 +29,7 @@ const HeroSection: React.FC = () => {
                     ))}
                 </Swiper>
             </div>
+            <div className="absolute inset-0 bg-black/60"></div>
 
             <div className='relative z-10'>
 
@@ -53,7 +54,7 @@ const HeroSection: React.FC = () => {
                             />
                         </h1>
 
-                        <p className="mt-6 max-w-125 text-sm leading-relaxed text-gray-400 sm:text-base max-md:text-white">
+                        <p className="mt-6 max-w-125 text-sm leading-relaxed text-gray-200 sm:text-base max-md:text-white">
                             {t("header.subtitle")}
                         </p>
 

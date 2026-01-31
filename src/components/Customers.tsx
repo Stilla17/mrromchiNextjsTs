@@ -23,7 +23,7 @@ const Customers: React.FC = () => {
                 {clients.map((client) => (
                     <SwiperSlide key={client.id} className="mx-auto">
                         <div className="group flex items-center justify-center gap-4 cursor-pointer transition">
-                            <img src={client.img} alt={client.name} className="max-w-40" />
+                            <img src={client.img} alt={client.name} className="max-w-50" />
                         </div>
                     </SwiperSlide>
                 ))}
