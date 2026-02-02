@@ -18,6 +18,10 @@
     display: none;
 }
 
+#contact a {
+    display: none !important;
+}
+
 /* .bgHeader {
     background-image: url('@/assets/header_bg4.png');
     background-repeat: no-repeat;

@@ -15,8 +15,7 @@ const Footer: React.FC = () => {
                     <div className="lg:col-span-4 flex flex-col gap-6">
                         <p className='font-bold text-[22px]'><span className='text-[#94813d]'>Mr</span> Romchi</p>
                         <p className="text-gray-400 leading-relaxed max-w-sm">
-                            Har bir xonadon uchun sifat va ishonch. Bizning maqsadimiz — uyingizni yanada qulay va
-                            ko'rkam qilishdir.
+                            {t('footer.about')}
                         </p>
                         <div className="flex gap-4">
                             <Link className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-black transition-all" href="#">
@@ -30,7 +29,7 @@ const Footer: React.FC = () => {
                     </div>
                     <div className='flex flex-1 w-full gap-8 justify-between max-md:flex-wrap max-md:justify-center max-md:gap-20'>
                         <div className="lg:col-span-2">
-                            <h3 className="font-bold text-white mb-6">Menu</h3>
+                            <h3 className="font-bold text-white mb-6">{t('footer.menu')}</h3>
                             <ul className="space-y-4 text-sm text-gray-400">
                                 {
                                     navItems?.map(item => (
@@ -44,7 +43,7 @@ const Footer: React.FC = () => {
                             </ul>
                         </div>
                         <div className="lg:col-span-3">
-                            <h3 className="font-bold text-white mb-6">Maxsulotlar</h3>
+                            <h3 className="font-bold text-white mb-6">{t('nav.products')}</h3>
                             <ul className="space-y-4 text-sm text-gray-400">
                                 <li><a className="hover:text-white transition-colors" href="#">PVX 6000 Trio</a></li>
                                 <li><a className="hover:text-white transition-colors" href="#">Engelberg 7000</a></li>
@@ -53,7 +52,7 @@ const Footer: React.FC = () => {
                             </ul>
                         </div>
                         <div className="lg:col-span-3">
-                            <h3 className="font-bold text-white mb-6">Bog'lanish</h3>
+                            <h3 className="font-bold text-white mb-6">{t('footer.call')}</h3>
                             <ul className="space-y-4 text-sm text-gray-400">
                                 <li className="flex items-center gap-2">
                                     <Phone />
@@ -66,7 +65,7 @@ const Footer: React.FC = () => {
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Mail />
-                                    <span>mrromchi@gmail.com</span>
+                                    <span>abduboriy.18.98@gmail.com</span>
                                 </li>
                             </ul>
                         </div>
@@ -74,12 +73,8 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
                     <p className="text-sm text-gray-500">
-                        © {new Date().getFullYear()} Mrrochi. Barcha huquqlar himoyalangan.
+                        © {new Date().getFullYear()} {t('footer.copyright')}
                     </p>
-                    <div className="flex gap-6 text-sm text-gray-500">
-                        <a className="hover:text-white transition-colors" href="#">Maxfiylik siyosati</a>
-                        <a className="hover:text-white transition-colors" href="#">Foydalanish shartlari</a>
-                    </div>
                 </div>
             </div>
         </footer>

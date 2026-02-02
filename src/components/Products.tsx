@@ -8,7 +8,7 @@ import TitleTexts from './Props/TitleTexts'
 const Products: React.FC = () => {
     const { t } = useTranslation()
     return (
-        <section className='max-w-7xl mx-auto px-4 max-md:mt-8'>
+        <section className='max-w-7xl mx-auto px-4 mt-8'>
 
             <TitleTexts title={t('products.title')} subtitle={t('products.subtitle')} />
 

@@ -52,5 +52,32 @@
                 "description": "Tayyor mahsulotlarni manzilingizga xavfsiz yetkazib beramiz."
             }
         }
+    },
+    "about": {
+        "miniTitle": "Kompaniya haqida",
+        "title": "Biz haqimizda",
+        "subtitle": "Mr Romchi kompaniyasi ko'p yillardan buyon bozorda o'z o'rniga ega bo'lgan, sifat va ishonch timsoliga aylangan korxonadir. Bizning maqsadimiz – har bir xonadonga qulaylik va zamonaviy ko'rinish olib kirish.",
+        "yearWork": "Yillik tajriba",
+        "clients": "Mamnun mijozlar",
+        "quality": "Sifat kafolati",
+        "time": "Qo'llab-quvvatlash",
+        "team": "Professionallar jamoasi"
+    },
+    "customers": {
+        "title": "Bizning Mijozlar",
+        "subtitle": "Bizga ishonch bildirgan kompaniyalar"
+    },
+    "contact": {
+        "title": "Bepul xisoblash",
+        "subtitle": "Eshik va romlar uchun bepul hisob-kitob va dizayn xizmati! Telefon raqamingizni qoldiring, biz siz bilan aloqaga chiqamiz.",
+        "address": "Manzil",
+        "phone": "Telefon",
+        "button": "Yuborish"
+    },
+    "footer": {
+        "about": "Mr Romchi — sifatli eshik va romlar bo‘yicha mutaxassis.",
+        "copyright": "Mr Romchi. Barcha huquqlar himoyalangan.",
+        "menu": "Menyu",
+        "call": "Bog'lanish"
     }
 }

@@ -52,5 +52,32 @@
                 "description": "We deliver finished products safely to your address."
             }
         }
+    },
+    "about": {
+        "miniTitle": "About the Company",
+        "title": "About Us",
+        "subtitle": "The Mr Romchi company has held its place in the market for many years, becoming a symbol of quality and reliability. Our goal is to bring comfort and a modern look to every home.",
+        "yearWork": "Years of Experience",
+        "clients": "Satisfied Clients",
+        "quality": "Quality Guarantee",
+        "time": "Customer Support",
+        "team": "Professional Team"
+    },
+    "customers": {
+        "title": "Our Customers",
+        "subtitle": "Companies that trust us"
+    },
+    "contact": {
+        "title": "Free Calculation",
+        "subtitle": "Free calculation and design service for doors and frames! Leave your phone number, we will contact you.",
+        "address": "Address",
+        "phone": "Phone",
+        "button": "Send"
+    },
+    "footer": {
+        "about": "Quality and reliability for every home. Our goal is to make your home more comfortable and beautiful.",
+        "copyright": "Mr Romchi. All rights reserved.",
+        "menu": "Menu",
+        "call": "Contact"
     }
 }

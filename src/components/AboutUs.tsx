@@ -1,36 +1,37 @@
+'use client'
 import { Users } from 'lucide-react'
 import React from 'react'
 import AnimatedCounter from './Props/AnimatedCounter'
+import { useTranslation } from 'react-i18next'
 
 const AboutUs: React.FC = () => {
+    const { t } = useTranslation()
     return (
         <section className='bg-cover bg-no-repeat aboutSection'>
             <div className='max-w-7xl mx-auto px-4 py-24 max-md:px-6'>
                 <div className='flex items-center justify-between max-md:flex-col-reverse'>
                     <div className='max-md:mt-12 max-md:text-center'>
-                        <span className='bg-[#404040] py-1 px-3 text-[12px] font-bold text-white rounded-md'>Kompaniya haqida</span>
+                        <span className='bg-[#404040] py-1 px-3 text-[12px] font-bold text-white rounded-md'>{t('about.miniTitle')}</span>
 
-                        <h2 className='text-white text-[60px] font-bold my-4 max-md:text-[30px]'>Biz haqimizda</h2>
-                        <p className='text-[18px] text-gray-300 max-w-xl max-md:text-[16px]'>"Mrrochi" kompaniyasi ko'p yillardan buyon bozorda o'z o'rniga ega bo'lgan,
-                            sifat va ishonch timsoliga aylangan korxonadir.
-                            Bizning maqsadimiz – har bir xonadonga qulaylik va zamonaviy ko'rinish olib kirish.</p>
+                        <h2 className='text-white text-[60px] font-bold my-4 max-md:text-[30px]'>{t('about.title')}</h2>
+                        <p className='text-[18px] text-gray-300 max-w-xl max-md:text-[16px]'>{t('about.subtitle')}</p>
 
                         <div className="grid grid-cols-2 gap-8 pt-6">
                             <div>
                                 <AnimatedCounter value={6} suffix="+" delay={0} />
-                                <p className="text-sm text-gray-400">Yillik Tajriba</p>
+                                <p className="text-sm text-gray-400">{t('about.yearWork')}</p>
                             </div>
                             <div>
                                 <AnimatedCounter value={100} suffix="+" delay={0} />
-                                <p className="text-sm text-gray-400">Mamnun Mijozlar</p>
+                                <p className="text-sm text-gray-400">{t('about.clients')}</p>
                             </div>
                             <div>
                                 <AnimatedCounter value={100} suffix="%" delay={0} />
-                                <p className="text-sm text-gray-400">Sifat Kafolati</p>
+                                <p className="text-sm text-gray-400">{t('about.quality')}</p>
                             </div>
                             <div>
                                 <h4 className="text-3xl font-bold text-white mb-1 max-md:text-[24px]">24/7</h4>
-                                <p className="text-sm text-gray-400">Qo'llab-quvvatlash</p>
+                                <p className="text-sm text-gray-400">{t('about.time')}</p>
                             </div>
                         </div>
                     </div>
@@ -42,10 +43,10 @@ const AboutUs: React.FC = () => {
                             <div className="mt-6 flex items-center justify-between">
                                 <div>
                                     <h3 className="text-xl font-bold">
-                                        Mrrochi Team
+                                        Mr Romchi Team
                                     </h3>
                                     <p className="text-sm text-gray-500">
-                                        Professionallar jamoasi
+                                        {t('about.team')}
                                     </p>
                                 </div>
 

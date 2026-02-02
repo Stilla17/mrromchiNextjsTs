@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
             <div className='relative z-10'>
 
                 <Header />
-                <div className="mx-auto max-w-7xl px-4 md:py-32 max-md:mt-8">
+                <div className="mx-auto max-w-7xl px-4 py-27 max-md:mt-8">
                     <div className="max-w-2xl">
 
                         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs text-white">

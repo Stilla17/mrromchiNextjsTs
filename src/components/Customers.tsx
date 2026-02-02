@@ -2,12 +2,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { clients } from "@/data/products";
+import { useTranslation } from "react-i18next";
 
 const Customers: React.FC = () => {
+    const { t } = useTranslation()
     return (
-        <section className="max-w-7xl mx-auto px-4 py-24">
-            <h2 className='text-3xl font-bold tracking-tight text-primary text-center md:text-5xl'>Bizning Mijozlar</h2>
-            <p className='mt-4 text-lg text-gray-600 text-center mb-12'>Bizga ishonch bildirgan kompaniyalar</p>
+        <section className="max-w-7xl mx-auto px-4 mt-8">
+            <h2 className='text-3xl font-bold tracking-tight text-primary text-center md:text-5xl'>{t("customers.title")}</h2>
+            <p className='mt-4 text-lg text-gray-600 text-center mb-12'>{t("customers.subtitle")}</p>
 
             <Swiper
                 spaceBetween={50}
