@@ -12,7 +12,7 @@ const Header: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
   const { t } = useTranslation()
   return (
-    <div className="w-full text-white py-4">
+    <div className="w-full text-white py-4" >
       <div className="mx-auto max-w-7xl px-4">
         <div className="flex h-16 items-center justify-between">
 

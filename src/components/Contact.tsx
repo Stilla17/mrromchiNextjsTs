@@ -1,24 +1,51 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import MapLibreMap from './MapLibreMap'
 import { MapPin, Phone, Send, Instagram } from "lucide-react";
 import { InputMask } from 'primereact/inputmask'
 import { useTranslation } from 'react-i18next';
+import axios from 'axios';
 
 const Contact: React.FC = () => {
     const { t } = useTranslation()
+
+    const [phone, setPhone] = useState("");
+
+    const chat_id = "72523250"
+    const token = "8363757953:AAGxVfFz_wrd5OJkZ4lBhms7Fm94N79umjE"
+    const urlApi = `https://api.telegram.org/bot${token}/sendMessage`
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        if (!phone.trim()) return;
+        try {
+
+            await axios.post(urlApi, {
+                chat_id: chat_id,
+                text: `Yangi Murojaat\nTelefon raqam: ${phone}`
+            });
+            alert("Murojaatingiz yuborildi")
+            setPhone("");
+        }
+        catch (error) {
+            console.error("Error sending message:", error);
+        }
+    }
+
     return (
         <section id='contact' className='max-w-7xl mx-auto px-4 py-24 flex max-md:flex-col max-md:gap-8'>
             <div className="bg-white p-10 rounded-lg shadow-2xl">
                 <h2 className="text-3xl font-bold mb-4">{t('contact.title')}</h2>
                 <p className="mb-4 text-gray-400 text-lg">{t('contact.subtitle')}</p>
 
-                <form className="mb-6">
+                <form className="mb-6" onSubmit={handleSubmit}>
 
                     <InputMask
                         mask="+(998) 99 999 99 99"
                         placeholder="+998"
+                        value={phone}
+                        onChange={(e) => setPhone(e.value ?? "")}
                         className="block text-[18px] w-full border px-4 py-2 rounded-lg border-gray-300 focus:outline-none"
                     />
 
@@ -53,7 +80,7 @@ const Contact: React.FC = () => {
                         </div>
                         <div>
                             <p className="font-semibold text-gray-900">Telegram</p>
-                            <p className="text-gray-500">@azizov707</p>
+                            <p className="text-gray-500">@azizov706</p>
                         </div>
                     </div>
 

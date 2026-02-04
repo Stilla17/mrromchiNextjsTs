@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 const AboutUs: React.FC = () => {
     const { t } = useTranslation()
     return (
-        <section className='bg-cover bg-no-repeat aboutSection'>
+        <section className='bg-cover bg-no-repeat aboutSection' id='about'>
             <div className='max-w-7xl mx-auto px-4 py-24 max-md:px-6'>
                 <div className='flex items-center justify-between max-md:flex-col-reverse'>
                     <div className='max-md:mt-12 max-md:text-center'>

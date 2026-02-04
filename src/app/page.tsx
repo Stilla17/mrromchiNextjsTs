@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import Products from "@/components/Products";
 import Services from "@/components/Services";
+import ToUp from "@/components/ToUp";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <AboutUs />
       <Customers />
       <Contact />
+      <ToUp />
       <Footer />
     </main>
   );
