@@ -3,6 +3,7 @@ import "./globals.css";
 import 'i18n';
 import { Plus_Jakarta_Sans } from "next/font/google";
 import I18nProvider from "@/providers/I18nProvider";
+import { ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
   title: "My App",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body style={{ fontFamily: 'var(--font-jakarta)' }}>
         <I18nProvider>
           {children}
+          <ToastContainer />
         </I18nProvider>
       </body>
     </html>

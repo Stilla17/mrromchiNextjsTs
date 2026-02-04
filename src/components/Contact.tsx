@@ -6,6 +6,7 @@ import { MapPin, Phone, Send, Instagram } from "lucide-react";
 import { InputMask } from 'primereact/inputmask'
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const Contact: React.FC = () => {
     const { t } = useTranslation()
@@ -25,7 +26,7 @@ const Contact: React.FC = () => {
                 chat_id: chat_id,
                 text: `Yangi Murojaat\nTelefon raqam: ${phone}`
             });
-            alert("Murojaatingiz yuborildi")
+            toast.success(t('contact.successToast'));
             setPhone("");
         }
         catch (error) {

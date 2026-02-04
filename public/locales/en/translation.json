@@ -72,7 +72,8 @@
         "subtitle": "Free calculation and design service for doors and frames! Leave your phone number, we will contact you.",
         "address": "Address",
         "phone": "Phone",
-        "button": "Send"
+        "button": "Send",
+        "successToast": "Thank you for your inquiry! We will contact you shortly."
     },
     "footer": {
         "about": "Quality and reliability for every home. Our goal is to make your home more comfortable and beautiful.",

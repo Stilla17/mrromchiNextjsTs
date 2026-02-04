@@ -72,7 +72,8 @@
         "subtitle": "Eshik va romlar uchun bepul hisob-kitob va dizayn xizmati! Telefon raqamingizni qoldiring, biz siz bilan aloqaga chiqamiz.",
         "address": "Manzil",
         "phone": "Telefon",
-        "button": "Yuborish"
+        "button": "Yuborish",
+        "successToast": "Murojaatingiz uchun rahmat! Tez orada siz bilan bog'lanamiz."
     },
     "footer": {
         "about": "Mr Romchi — sifatli eshik va romlar bo‘yicha mutaxassis.",
