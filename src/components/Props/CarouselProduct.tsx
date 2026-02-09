@@ -1,5 +1,6 @@
 'use client';
 import React, { useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
@@ -7,6 +8,7 @@ import { CarouselProductProps } from './../../types/product';
 
 const CarouselProduct: React.FC<CarouselProductProps> = ({ title, className, products }) => {
 
+    const { t } = useTranslation()
     const prevRef = useRef<HTMLButtonElement | null>(null);
     const nextRef = useRef<HTMLButtonElement | null>(null);
 
@@ -57,7 +59,7 @@ const CarouselProduct: React.FC<CarouselProductProps> = ({ title, className, pro
                                 <h4 className="text-xl font-semibold text-gray-800 max-md:text-lg">
                                     {product.name}
                                 </h4>
-                                <p className="text-gray-600 mt-2 text-[14px]">{product.description}</p>
+                                <p className="text-gray-600 mt-2 text-[14px]">{t(product.description)}</p>
                             </div>
                         </div>
                     </SwiperSlide>

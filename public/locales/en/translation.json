@@ -80,5 +80,48 @@
         "copyright": "Mr Romchi. All rights reserved.",
         "menu": "Menu",
         "call": "Contact"
+    },
+    "pvx": {
+        "title": "Product Description"
+    },
+    "productDescriptions": {
+        "pvx": {
+            "6000_trio": "A universal profile offering the right balance of quality and price for your home.",
+            "6000_qvt": "An economical but high-quality profile that helps you save money.",
+            "7000_engelberg": "One of our premium profiles.",
+            "8000_engelberg": "A top-level premium quality profile."
+        },
+        "alumin": {
+            "aldox": "Affordable and versatile profile.",
+            "champion": "A reliable and durable profile.",
+            "termo_7000": "A sturdy profile that meets modern requirements.",
+            "termo_5700": "High quality with an economical appearance.",
+            "termo_9800": "Thick and robust aluminum profile of premium class."
+        },
+        "sliding": {
+            "bkx_65": "Very strong sliding profile.",
+            "bkx_38": "Economical sliding profile."
+        },
+        "fasad": {
+            "bkf_48": "Top profile for exterior facades.",
+            "bkf_50": "New, modern and very sturdy profile.",
+            "pauk_sistema": "A system with a unique design."
+        },
+        "newSystem": {
+            "rolstavniy": "Modern gates.",
+            "sekshionniy": "Modern gates.",
+            "sensor": "A self-operating sensor system.",
+            "gelatina": "A system that meets modern demands.",
+            "pergola": "A system that meets modern demands.",
+            "markiza": "A system that meets modern demands."
+        },
+        "others": {
+            "san_uzel": "Top options for your home.",
+            "perila": "Distinctive guards for windows and openings.",
+            "podokonnik": "A must-have detail for your space.",
+            "moskitnaya_setka": "An essential protective device for the summer season.",
+            "peregorodka": "High-quality metal profiles that open up your interior.",
+            "zimniy_sad": "The best and safest solution for an enclosed glazed area."
+        }
     }
 }

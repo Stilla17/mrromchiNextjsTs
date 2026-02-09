@@ -6,25 +6,25 @@ export const pvxProducts: ProductItem[] = [
         id: 1,
         name: '6000 trio',
         img: './productsImg/trio6000.png',
-        description: 'Description for PVX Product 1',
+        description: 'productDescriptions.pvx.6000_trio',
     },
     {
         id: 2,
         name: '6000 qvt',
         img: './productsImg/quattro6000.png',
-        description: 'Description for PVX Product 2',
+        description: 'productDescriptions.pvx.6000_qvt',
     },
     {
         id: 3,
         name: '7000 engelberg',
         img: './productsImg/engelberg7000.png',
-        description: 'Description for PVX Product 3',
+        description: 'productDescriptions.pvx.7000_engelberg',
     },
     {
         id: 4,
         name: '8000 engelberg',
         img: './productsImg/engelberg8000.png',
-        description: 'Description for PVX Product 4',
+        description: 'productDescriptions.pvx.8000_engelberg',
     },
 ]
 
@@ -33,31 +33,31 @@ export const alyuminProducts: ProductItem[] = [
         id: 1,
         name: 'Aldox',
         img: './productsImg/aldox.png',
-        description: 'Description for Aluminum Product 1',
+        description: 'productDescriptions.alumin.aldox',
     },
     {
         id: 2,
         name: 'Champion',
         img: 'https://akfagroup.com/img/src/functional/aldox1.png',
-        description: 'Description for Aluminum Product 2',
+        description: 'productDescriptions.alumin.champion',
     },
     {
         id: 3,
         name: 'Termo 7000',
         img: '/productsImg/bkt70.png',
-        description: 'Description for Aluminum Product 3',
+        description: 'productDescriptions.alumin.termo_7000',
     },
     {
         id: 4,
         name: 'Termo 5700',
         img: '/productsImg/termo5700.jpg',
-        description: 'Description for Aluminum Product 3',
+        description: 'productDescriptions.alumin.termo_5700',
     },
     {
         id: 5,
         name: 'Termo 9800',
         img: '/productsImg/bkt98.png',
-        description: 'Description for Aluminum Product 3',
+        description: 'productDescriptions.alumin.termo_9800',
     }
 ]
 
@@ -66,13 +66,13 @@ export const razdvijnoyProducts: ProductItem[] = [
         id: 1,
         name: 'Bkx 65',
         img: './productsImg/bkx 65.png',
-        description: 'Description for Sliding Product 1',
+        description: 'productDescriptions.sliding.bkx_65',
     },
     {
         id: 2,
         name: 'Bkx 38',
         img: '/productsImg/bkx38.jpg',
-        description: 'Description for Sliding Product 2',
+        description: 'productDescriptions.sliding.bkx_38',
     }
 ]
 
@@ -81,19 +81,19 @@ export const fasadProducts: ProductItem[] = [
         id: 1,
         name: 'Bkf 48',
         img: './productsImg/jp 48.png',
-        description: 'Description for Balcony Product 1',
+        description: 'productDescriptions.fasad.bkf_48',
     },
     {
         id: 2,
         name: 'Bkf 50',
         img: '/productsImg/bkf50.jpg',
-        description: 'Description for Facade Product 1',
+        description: 'productDescriptions.fasad.bkf_50',
     },
     {
         id: 3,
         name: 'Pauk sistema',
         img: '/productsImg/spidersystem.jpg',
-        description: 'Description for Facade Product 2',
+        description: 'productDescriptions.fasad.pauk_sistema',
     }
 
 ]
@@ -103,37 +103,37 @@ export const newSystemProducts: ProductItem[] = [
         id: 1,
         name: 'Rolstavniy',
         img: '/productsImg/rolsatvdoor.jpeg',
-        description: 'Description for New System Product 1',
+        description: 'productDescriptions.newSystem.rolstavniy',
     },
     {
         id: 2,
         name: 'Sekshionniy',
         img: '/productsImg/sektiondoor.jpg',
-        description: 'Description for New System Product 2',
+        description: 'productDescriptions.newSystem.sekshionniy',
     },
     {
         id: 3,
         name: 'Sensor',
         img: 'https://alutech.uz/upload/resize_cache/webp/iblock/8d9/8d9748d8ce3ab466f12dca0483a29b7a.webp',
-        description: 'Description for New System Product 3',
+        description: 'productDescriptions.newSystem.sensor',
     },
     {
         id: 4,
         name: 'Gelatina',
         img: '/productsImg/gelatina.jpeg',
-        description: 'Description for New System Product 4',
+        description: 'productDescriptions.newSystem.gelatina',
     },
     {
         id: 5,
         name: 'Pergola',
         img: '/productsImg/pergola.jpg',
-        description: 'Description for New System Product 5',
+        description: 'productDescriptions.newSystem.pergola',
     },
     {
         id: 6,
         name: 'Markiza',
         img: '/productsImg/markizy-glavnaya.jpeg',
-        description: 'Description for New System Product 6',
+        description: 'productDescriptions.newSystem.markiza',
     }
 ]
 
@@ -142,37 +142,37 @@ export const otherProducts: ProductItem[] = [
         id: 1,
         name: 'San-uzel',
         img: '/productsImg/san_uzel.jpeg',
-        description: 'Description for Other Product 1',
+        description: 'productDescriptions.others.san_uzel',
     },
     {
         id: 2,
         name: 'Perila',
         img: '/productsImg/perila.jpeg',
-        description: 'Description for Other Product 2',
+        description: 'productDescriptions.others.perila',
     },
     {
         id: 3,
         name: 'Podokonnik',
         img: '/productsImg/podokonnik.png',
-        description: 'Description for Other Product 3',
+        description: 'productDescriptions.others.podokonnik',
     },
     {
         id: 4,
         name: 'Moskitnaya setka',
         img: '/productsImg/setka.png',
-        description: 'Description for Other Product 4',
+        description: 'productDescriptions.others.moskitnaya_setka',
     },
     {
         id: 5,
         name: 'Peregorodka',
         img: '/productsImg/peregarodka.jpeg',
-        description: 'Description for Other Product 5',
+        description: 'productDescriptions.others.peregorodka',
     },
     {
         id: 6,
         name: 'Zimniy sad',
         img: '/productsImg/wintergarden.png',
-        description: 'Description for Other Product 6',
+        description: 'productDescriptions.others.zimniy_sad',
     }
 ]
 

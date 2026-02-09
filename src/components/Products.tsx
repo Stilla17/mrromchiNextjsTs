@@ -12,7 +12,7 @@ const Products: React.FC = () => {
 
             <TitleTexts title={t('products.title')} subtitle={t('products.subtitle')} />
 
-            <CarouselProduct title={t('products.pvx')} className='bg-blue-600' products={pvxProducts} />
+            <CarouselProduct title={t('products.pvx')} className='bg-blue-600 flex' products={pvxProducts} />
             <CarouselProduct title={t('products.alumin')} className='bg-red-600' products={alyuminProducts} />
             <CarouselProduct title={t('products.sliding')} className='bg-green-600' products={razdvijnoyProducts} />
             <CarouselProduct title={t('products.fasad')} className='bg-yellow-600' products={fasadProducts} />

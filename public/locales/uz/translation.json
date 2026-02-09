@@ -80,5 +80,48 @@
         "copyright": "Mr Romchi. Barcha huquqlar himoyalangan.",
         "menu": "Menyu",
         "call": "Bog'lanish"
+    },
+    "productDescription": {
+        "title": "Product Description"
+    },
+    "productDescriptions": {
+        "pvx": {
+            "6000_trio": "Xonadoningiz uchun narxiga sifati mos keluvchi universal profil.",
+            "6000_qvt": "Hamyoningizni tejovchi, iqtisodiy ammo sifatli profil.",
+            "7000_engelberg": "Premium profillarimizdan biri.",
+            "8000_engelberg": "Eng yuqori darajadagi premium sifatli profil."
+        },
+        "alumin": {
+            "aldox": "Hamyonbop va universal profil.",
+            "champion": "Ishonchli va chidamli profil.",
+            "termo_7000": "Zamon talabiga mos, mustahkam profil.",
+            "termo_5700": "Yuqori sifatning iqtisodiy ko‘rinishi.",
+            "termo_9800": "Premium sinfdagi qalin va baquvvat alyumin profil."
+        },
+        "sliding": {
+            "bkx_65": "Juda baquvvat suriladigan profil.",
+            "bkx_38": "Iqtisodiy suriladigan profil."
+        },
+        "fasad": {
+            "bkf_48": "Tashqi fasad uchun eng zo'r profil.",
+            "bkf_50": "Yangi zamonaviy, juda mustahkam profil.",
+            "pauk_sistema": "O‘ziga xos dizaynga ega sistema."
+        },
+        "newSystem": {
+            "rolstavniy": "Zamonaviy darvozalar.",
+            "sekshionniy": "Zamonaviy darvozalar.",
+            "sensor": "O‘zi harakatlanuvchi sensor sistema.",
+            "gelatina": "Zamon talabidagi sistema.",
+            "pergola": "Zamon talabidagi sistema.",
+            "markiza": "Zamon talabidagi sistema."
+        },
+        "others": {
+            "san_uzel": "Uyingiz uchun eng zo'r variantlar.",
+            "perila": "Oyna va proyomlardan o‘zgacha to‘siqlar.",
+            "podokonnik": "Xonangiz uchun eng kerakli detal.",
+            "moskitnaya_setka": "Yozgi mavsum uchun zaruriy himoya vositasi.",
+            "peregorodka": "Uyingiz interyerini ochuvchi sifatli metall profillar.",
+            "zimniy_sad": "Yopiq oynali maydon uchun eng zo'r va xavfsiz yechim."
+        }
     }
 }

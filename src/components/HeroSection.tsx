@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
                 <Swiper
                     modules={[Autoplay]}
                     slidesPerView={1}
-                    autoplay={{ delay: 5000, disableOnInteraction: false }}
+                    autoplay={{ delay: 7000, disableOnInteraction: false }}
                     loop
                     className="h-full w-full"
                 >
