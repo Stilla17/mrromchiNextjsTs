@@ -1,0 +1,26 @@
+{
+  "name": "Mr Romchi - Premium Rom va Eshiklar",
+  "short_name": "Mr Romchi",
+  "description": "Toshkentda eng sifatli PVX va alyumin eshik va romlar",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "shopping", "services"],
+  "lang": "uz"
+}
