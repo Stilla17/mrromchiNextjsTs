@@ -5,8 +5,7 @@ import Link from 'next/link'
 import DropdownLang from './Props/DropdownLang';
 import { useTranslation } from 'react-i18next';
 import { navItems } from '@/data/products';
-import Image from 'next/image';
-import logo from './../../public/icon.png';
+import logo from '../../public/icon.png';
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -17,11 +16,7 @@ const Header: React.FC = () => {
         <div className="flex h-16 items-center justify-between">
 
           <div className="flex items-center gap-2">
-            <Image
-              width={50}
-              src={logo}
-              alt='Mr Romchi - Sifatli xizmatlar'
-              priority />
+            <img width={50} src={logo.src} alt='Mr Romchi - Sifatli xizmatlar' />
             <p className='font-bold text-[22px]'><span className='text-[#94813d]'>Mr</span> Romchi</p>
           </div>
 

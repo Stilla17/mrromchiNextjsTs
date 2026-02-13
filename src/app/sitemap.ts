@@ -1,8 +1,10 @@
 import { MetadataRoute } from 'next'
 
+export const dynamic = 'force-static'  // ← Bu qatorni qo'shing
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://mrromchi.uz'
-  
+
   const routes = [
     '',
     '/about',
