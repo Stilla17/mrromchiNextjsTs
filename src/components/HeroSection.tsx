@@ -10,12 +10,12 @@ import { slides } from '@/data/products'
 const HeroSection: React.FC = () => {
     const { t } = useTranslation()
     return (
-        <header className="relative w-full overflow-hidden max-md:pb-12">
+        <header className="relative w-full overflow-hidden max-md:pb-12 h-screen">
             <div className="absolute inset-0 -z-10">
                 <Swiper
                     modules={[Autoplay]}
                     slidesPerView={1}
-                    autoplay={{ delay: 7000, disableOnInteraction: false }}
+                    autoplay={{ delay: 5000, disableOnInteraction: false }}
                     loop
                     className="h-full w-full"
                 >
@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
                         <SwiperSlide key={index}>
                             <div
                                 className="h-screen w-full bg-cover bg-center max-md:h-full max-md:bg-fixed"
-                                style={{ backgroundImage: `url(${img})` }}
+                                style={{ backgroundImage: `url(${img})`, backgroundPosition: "0, bottom" }}
                             />
                         </SwiperSlide>
                     ))}

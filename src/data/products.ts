@@ -114,7 +114,7 @@ export const newSystemProducts: ProductItem[] = [
     {
         id: 3,
         name: 'Sensor',
-        img: 'https://alutech.uz/upload/resize_cache/webp/iblock/8d9/8d9748d8ce3ab466f12dca0483a29b7a.webp',
+        img: '/productsImg/sensor.jpg',
         description: 'productDescriptions.newSystem.sensor',
     },
     {
@@ -240,4 +240,5 @@ export const slides = [
     '/images/headerbg1.jpg',
     '/images/headerbg2.jpg',
     '/images/headerbg3.jpg',
+    '/images/headerbg4.jpg',
 ]
