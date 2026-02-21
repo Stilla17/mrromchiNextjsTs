@@ -1,15 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Allow: /
-Disallow: /api/
-
-# Google Bot
-User-agent: Googlebot
-Allow: /
-Disallow: /api/
-
-# Yandex Bot
-User-agent: Yandex
 Allow: /
 Disallow: /api/
 

@@ -22,9 +22,16 @@
     display: none !important;
 }
 
-/* .bgHeader {
-    background-image: url('@/assets/header_bg4.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-} */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.523);
+    }
+
+    50% {
+        box-shadow: 0 0 20px white;
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.523);
+    }
+}

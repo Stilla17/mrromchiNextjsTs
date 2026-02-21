@@ -18,10 +18,10 @@ const Footer: React.FC = () => {
                             {t('footer.about')}
                         </p>
                         <div className="flex gap-4">
-                            <Link className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-black transition-all" href="#">
+                            <Link className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-black transition-all" target='_blank' href="#">
                                 <Instagram />
                             </Link>
-                            <Link className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-black transition-all" href="#">
+                            <Link className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-black transition-all" target='_blank' href="https://t.me/azizov706">
                                 <Send />
                             </Link>
 

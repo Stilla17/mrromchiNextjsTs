@@ -46,8 +46,8 @@ const CarouselProduct: React.FC<CarouselProductProps> = ({ title, className, pro
                 loop={products.length > 4}
             >
                 {products.map((product) => (
-                    <SwiperSlide key={product.id} className='py-12'>
-                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <SwiperSlide key={product.id} className='py-12 '>
+                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-100 max-md:h-auto">
                             <div className="relative overflow-hidden bg-gray-100">
                                 <img
                                     src={product.img}

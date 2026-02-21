@@ -65,7 +65,7 @@ export const razdvijnoyProducts: ProductItem[] = [
     {
         id: 1,
         name: 'Bkx 65',
-        img: './productsImg/bkx 65.png',
+        img: './productsImg/bkx_65.png',
         description: 'productDescriptions.sliding.bkx_65',
     },
     {
@@ -80,7 +80,7 @@ export const fasadProducts: ProductItem[] = [
     {
         id: 1,
         name: 'Bkf 48',
-        img: './productsImg/jp 48.png',
+        img: './productsImg/jp_48.png',
         description: 'productDescriptions.fasad.bkf_48',
     },
     {

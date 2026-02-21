@@ -38,7 +38,10 @@ const HeroSection: React.FC = () => {
                     <div className="max-w-2xl">
 
                         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs text-white">
-                            <span className="h-2 w-2 rounded-full bg-green-500" />
+                            <div className="relative flex items-center justify-center">
+                                <span className="absolute inline-flex h-2 w-2 rounded-full bg-green-400 opacity-75 animate-ping"></span>
+                                <span className="relative h-2 w-2 rounded-full bg-green-500"></span>
+                            </div>
                             {t('header.premium')}
                         </div>
 
@@ -69,7 +72,11 @@ const HeroSection: React.FC = () => {
 
                             <a
                                 href="tel:+998909333898"
-                                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                                className="inline-flex items-center justify-center gap-2 
+                                            rounded-full border border-white
+                                            px-6 py-3 text-sm font-semibold text-white
+                                            transition hover:bg-white/10
+                                            animate-[glow_2s_ease-in-out_infinite]"
                             >
                                 <Phone size={16} />
                                 {t("header.contact")}

@@ -108,6 +108,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className={jakarta.variable}>
       <head>
         <link rel="canonical" href={baseUrl} />
+        <meta name="google-site-verification" content="icLVLMOf7ip40hWWskPw5d-nmqQsH0W2pPepFFU-F3c" />
       </head>
       <body style={{ fontFamily: 'var(--font-jakarta)' }}>
         <I18nProvider>
