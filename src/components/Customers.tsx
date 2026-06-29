@@ -1,6 +1,5 @@
 'use client'
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 import { clients } from "@/data/products";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
@@ -10,12 +9,12 @@ const getImageSrc = (src: string) => src.replace(/^\.\//, '/');
 const Customers: React.FC = () => {
     const { t } = useTranslation()
     return (
-        <section className="max-w-7xl mx-auto px-4 mt-8" id="">
+        <section className="max-w-7xl mx-auto px-4 mt-8">
             <h2 className='text-3xl font-bold tracking-tight text-primary text-center md:text-5xl'>{t("customers.title")}</h2>
             <p className='mt-4 text-lg text-gray-600 text-center mb-12'>{t("customers.subtitle")}</p>
 
             <Swiper
-                spaceBetween={50}
+                spaceBetween={0}
                 slidesPerView={3}
                 loop={true}
                 breakpoints={{
@@ -33,7 +32,7 @@ const Customers: React.FC = () => {
                                 alt={client.name}
                                 width={200}
                                 height={120}
-                                className="h-24 w-auto object-contain"
+                                className="h-35 w-auto object-contain"
                             />
                         </div>
                     </SwiperSlide>

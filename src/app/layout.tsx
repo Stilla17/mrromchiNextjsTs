@@ -3,17 +3,42 @@ import 'i18n';
 import { Plus_Jakarta_Sans } from "next/font/google";
 import I18nProvider from "@/providers/I18nProvider";
 import { ToastContainer } from "react-toastify";
+import "maplibre-gl/dist/maplibre-gl.css";
 import "./globals.css";
 
 const baseUrl = 'https://grandwindow.uz'
+const siteName = 'Grand Window'
+const siteDescription = 'Grand Window - Toshkentda eng sifatli PVX va alyumin eshik va romlar. 24/7 xizmat, bepul o‘lchov va o‘rnatish. +998 90 933 38 98'
+const googleSiteVerification = 'icLVLMOf7ip40hWWskPw5d-nmqQsH0W2pPepFFU-F3c'
+
+const localBusinessJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: siteName,
+  url: baseUrl,
+  logo: `${baseUrl}/logolight.png`,
+  image: `${baseUrl}/opengraph-image.png`,
+  description: siteDescription,
+  telephone: '+998909333898',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Allon 74',
+    addressLocality: 'Toshkent',
+    addressCountry: 'UZ',
+  },
+  sameAs: [
+    'https://www.instagram.com/grand.window',
+    'https://t.me/grand_window',
+  ],
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Grand Window - Premium Rom va Eshiklar | PVX va Alyumin Profillar',
-    template: '%s | Grand Window'
+    default: `${siteName} - Premium Rom va Eshiklar | PVX va Alyumin Profillar`,
+    template: `%s | ${siteName}`
   },
-  description: 'Grand Window - Toshkentda eng sifatli PVX va alyumin eshik va romlar. 24/7 xizmat, bepul o\'lchov va o\'rnatish. ☎️ +998 90 933 38 98',
+  description: siteDescription,
   keywords: [
     'rom',
     'eshik',
@@ -35,9 +60,9 @@ export const metadata: Metadata = {
     'sifatli rom',
     'premium eshik'
   ],
-  authors: [{ name: 'Grand Window' }],
-  creator: 'Grand Window',
-  publisher: 'Grand Window',
+  authors: [{ name: siteName }],
+  creator: siteName,
+  publisher: siteName,
   formatDetection: {
     email: false,
     address: false,
@@ -47,8 +72,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'uz_UZ',
     url: baseUrl,
-    siteName: 'Grand Window',
-    title: 'Grand Window - Premium Rom va Eshiklar',
+    siteName,
+    title: `${siteName} - Premium Rom va Eshiklar`,
     description: 'Toshkentda eng sifatli PVX va alyumin eshik va romlar. Bepul o\'lchov va maslahat. +998 90 933 38 98',
     images: [
       {
@@ -58,6 +83,12 @@ export const metadata: Metadata = {
         alt: 'Grand Window - Premium Rom va Eshiklar',
       }
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${siteName} - Premium Rom va Eshiklar`,
+    description: siteDescription,
+    images: ['/opengraph-image.png'],
   },
   robots: {
     index: true,
@@ -88,8 +119,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'googlecd8502e4a0d3046b.html',
-    yandex: 'verification_code',
+    google: googleSiteVerification,
   },
   category: 'business',
 }
@@ -104,10 +134,12 @@ const jakarta = Plus_Jakarta_Sans({
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={jakarta.variable}>
+    <html lang="uz" className={jakarta.variable}>
       <head>
-        <link rel="canonical" href={baseUrl} />
-        <meta name="google-site-verification" content="icLVLMOf7ip40hWWskPw5d-nmqQsH0W2pPepFFU-F3c" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+        />
       </head>
       <body style={{ fontFamily: 'var(--font-jakarta)' }}>
         <I18nProvider>

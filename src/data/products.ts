@@ -38,7 +38,7 @@ export const alyuminProducts: ProductItem[] = [
     {
         id: 2,
         name: 'Champion',
-        img: 'https://akfagroup.com/img/src/functional/aldox1.png',
+        img: './productsImg/aldox1.png',
         description: 'productDescriptions.alumin.champion',
     },
     {

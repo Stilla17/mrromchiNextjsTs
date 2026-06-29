@@ -17,8 +17,7 @@ const Header: React.FC = () => {
         <div className="flex h-16 items-center justify-between">
 
           <div className="flex items-center gap-2">
-            <Image width={100} src={logo} alt='Mr Romchi - Sifatli xizmatlar' priority />
-            {/* <p className='font-bold text-[22px]'><span className='text-[#94813d]'>Mr</span> Romchi</p> */}
+            <Image width={100} src={logo} alt='Grand Window  - Sifatli xizmatlar' priority />
           </div>
 
           <nav aria-label="Asosiy menyu" >
