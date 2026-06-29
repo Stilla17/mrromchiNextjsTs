@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
     const [phone, setPhone] = useState("");
 
     const chat_id = "72523250"
-    const token = "8363757953:AAGxVfFz_wrd5OJkZ4lBhms7Fm94N79umjE"
+    const token = "8524344248:AAHpL6heBmlwVd0Kd8WvbdzSkOyh5_J3WmU"
     const urlApi = `https://api.telegram.org/bot${token}/sendMessage`
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -91,7 +91,7 @@ const Contact: React.FC = () => {
                         </div>
                         <div>
                             <p className="font-semibold text-gray-900">Instagram</p>
-                            <p className="text-gray-500">@mr_romchi</p>
+                            <p className="text-gray-500">@grand.window</p>
                         </div>
                     </div>
 

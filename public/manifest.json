@@ -1,6 +1,6 @@
 {
-  "name": "Mr Romchi - Premium Rom va Eshiklar",
-  "short_name": "Mr Romchi",
+  "name": "Grand Window - Premium Rom va Eshiklar",
+  "short_name": "Grand Window",
   "description": "Toshkentda eng sifatli PVX va alyumin eshik va romlar",
   "start_url": "/",
   "display": "standalone",
@@ -9,13 +9,13 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/icon.png",
+      "src": "/logolight.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icon.png",
+      "src": "/logolight.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import 'i18n';
 import { Plus_Jakarta_Sans } from "next/font/google";
 import I18nProvider from "@/providers/I18nProvider";
 import { ToastContainer } from "react-toastify";
+import "./globals.css";
 
-const baseUrl = 'https://mrromchi.uz'
+const baseUrl = 'https://grandwindow.uz'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Mr Romchi - Premium Rom va Eshiklar | PVX va Alyumin Profillar',
-    template: '%s | Mr Romchi'
+    default: 'Grand Window - Premium Rom va Eshiklar | PVX va Alyumin Profillar',
+    template: '%s | Grand Window'
   },
-  description: 'Mr Romchi - Toshkentda eng sifatli PVX va alyumin eshik va romlar. 24/7 xizmat, bepul o\'lchov va o\'rnatish. ☎️ +998 90 933 38 98',
+  description: 'Grand Window - Toshkentda eng sifatli PVX va alyumin eshik va romlar. 24/7 xizmat, bepul o\'lchov va o\'rnatish. ☎️ +998 90 933 38 98',
   keywords: [
     'rom',
     'eshik',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     'alyumin rom',
     'plastik oyna',
     'toshkent rom',
-    'mr romchi',
+    'grand window',
     'engelberg',
     'aldox',
     'termo profil',
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     'sifatli rom',
     'premium eshik'
   ],
-  authors: [{ name: 'Mr Romchi' }],
-  creator: 'Mr Romchi',
-  publisher: 'Mr Romchi',
+  authors: [{ name: 'Grand Window' }],
+  creator: 'Grand Window',
+  publisher: 'Grand Window',
   formatDetection: {
     email: false,
     address: false,
@@ -47,15 +47,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'uz_UZ',
     url: baseUrl,
-    siteName: 'Mr Romchi',
-    title: 'Mr Romchi - Premium Rom va Eshiklar',
+    siteName: 'Grand Window',
+    title: 'Grand Window - Premium Rom va Eshiklar',
     description: 'Toshkentda eng sifatli PVX va alyumin eshik va romlar. Bepul o\'lchov va maslahat. +998 90 933 38 98',
     images: [
       {
         url: '/opengraph-image.png',
         width: 1200,
         height: 630,
-        alt: 'Mr Romchi - Premium Rom va Eshiklar',
+        alt: 'Grand Window - Premium Rom va Eshiklar',
       }
     ],
   },
@@ -72,8 +72,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico' },
-      { url: '/icon.png', type: 'image/png' },
+      { url: '/logolight.png', type: 'image/png' },
     ],
     apple: [
       { url: '/apple-icon.png' },

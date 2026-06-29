@@ -2,8 +2,10 @@
 import { navItems } from '@/data/products'
 import { Instagram, Mail, MapPin, Phone, Send } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import logo from '../../public/logolight.png';
 
 const Footer: React.FC = () => {
     const { t } = useTranslation()
@@ -13,15 +15,17 @@ const Footer: React.FC = () => {
             <div className="max-w-7xl mx-auto ">
                 <div className="flex justify-between gap-20 max-md:flex-wrap max-md:flex-col mb-12 w-full">
                     <div className="lg:col-span-4 flex flex-col gap-6">
-                        <p className='font-bold text-[22px]'><span className='text-[#94813d]'>Mr</span> Romchi</p>
+                        <Image width={100} src={logo} alt='Grand Window - Sifatli xizmatlar' />
+
+                        {/* <p className='font-bold text-[22px]'><span className='text-[#94813d]'>Mr</span> Romchi</p> */}
                         <p className="text-gray-400 leading-relaxed max-w-sm">
                             {t('footer.about')}
                         </p>
                         <div className="flex gap-4">
-                            <Link className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-black transition-all" target='_blank' href="#">
+                            <Link className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-black transition-all" target='_blank' href="https://www.instagram.com/grand.window">
                                 <Instagram />
                             </Link>
-                            <Link className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-black transition-all" target='_blank' href="https://t.me/azizov706">
+                            <Link className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-black transition-all" target='_blank' href="https://t.me/grand_window">
                                 <Send />
                             </Link>
 

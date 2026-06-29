@@ -3,6 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { clients } from "@/data/products";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
+
+const getImageSrc = (src: string) => src.replace(/^\.\//, '/');
 
 const Customers: React.FC = () => {
     const { t } = useTranslation()
@@ -25,7 +28,13 @@ const Customers: React.FC = () => {
                 {clients.map((client) => (
                     <SwiperSlide key={client.id} className="mx-auto">
                         <div className="group flex items-center justify-center gap-4 cursor-pointer transition">
-                            <img src={client.img} alt={client.name} className="max-w-50" />
+                            <Image
+                                src={getImageSrc(client.img)}
+                                alt={client.name}
+                                width={200}
+                                height={120}
+                                className="h-24 w-auto object-contain"
+                            />
                         </div>
                     </SwiperSlide>
                 ))}

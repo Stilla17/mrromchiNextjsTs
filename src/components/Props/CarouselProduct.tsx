@@ -5,6 +5,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { CarouselProductProps } from './../../types/product';
+import Image from 'next/image';
+
+const getImageSrc = (src: string) => src.replace(/^\.\//, '/');
 
 const CarouselProduct: React.FC<CarouselProductProps> = ({ title, className, products }) => {
 
@@ -48,11 +51,13 @@ const CarouselProduct: React.FC<CarouselProductProps> = ({ title, className, pro
                 {products.map((product) => (
                     <SwiperSlide key={product.id} className='py-12 '>
                         <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-100 max-md:h-auto">
-                            <div className="relative overflow-hidden bg-gray-100">
-                                <img
-                                    src={product.img}
+                            <div className="relative h-64 overflow-hidden bg-gray-100">
+                                <Image
+                                    src={getImageSrc(product.img)}
                                     alt={product.name}
-                                    className="w-full h-64 object-contain transition-transform duration-500 hover:scale-105"
+                                    fill
+                                    sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                                    className="object-contain transition-transform duration-500 hover:scale-105"
                                 />
                             </div>
                             <div className="p-6 ">

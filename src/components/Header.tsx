@@ -2,10 +2,11 @@
 import React, { useState } from 'react'
 import { Menu } from 'lucide-react';
 import Link from 'next/link'
+import Image from 'next/image'
 import DropdownLang from './Props/DropdownLang';
 import { useTranslation } from 'react-i18next';
 import { navItems } from '@/data/products';
-import logo from '../../public/icon.png';
+import logo from '../../public/logolight.png';
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -16,14 +17,14 @@ const Header: React.FC = () => {
         <div className="flex h-16 items-center justify-between">
 
           <div className="flex items-center gap-2">
-            <img width={50} src={logo.src} alt='Mr Romchi - Sifatli xizmatlar' />
-            <p className='font-bold text-[22px]'><span className='text-[#94813d]'>Mr</span> Romchi</p>
+            <Image width={100} src={logo} alt='Mr Romchi - Sifatli xizmatlar' priority />
+            {/* <p className='font-bold text-[22px]'><span className='text-[#94813d]'>Mr</span> Romchi</p> */}
           </div>
 
           <nav aria-label="Asosiy menyu" >
             <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-white-700">
               {
-                navItems.map((item, index) => (
+                navItems.map((item) => (
                   <li key={item.key}>
                     <Link href={item.href} className="hover:text-[#94813d] transition ">
                       {t(item.key)}

@@ -8,7 +8,7 @@
     },
     "header": {
         "title": "Perfect quality <br /> <highlight>For your home</highlight>",
-        "subtitle": "The Mr Romchi brand offers you the most modern and high-quality doors and frames. Entrust your home to reliable hands.",
+        "subtitle": "The Grand Window brand offers you the most modern and high-quality doors and frames. Entrust your home to reliable hands.",
         "premium": "Premium Frames and Doors",
         "catalog": "View Catalog",
         "contact": "Contact"
@@ -56,7 +56,7 @@
     "about": {
         "miniTitle": "About the Company",
         "title": "About Us",
-        "subtitle": "The Mr Romchi company has held its place in the market for many years, becoming a symbol of quality and reliability. Our goal is to bring comfort and a modern look to every home.",
+        "subtitle": "The Grand Window company has held its place in the market for many years, becoming a symbol of quality and reliability. Our goal is to bring comfort and a modern look to every home.",
         "yearWork": "Years of Experience",
         "clients": "Satisfied Clients",
         "quality": "Quality Guarantee",
@@ -77,12 +77,9 @@
     },
     "footer": {
         "about": "Quality and reliability for every home. Our goal is to make your home more comfortable and beautiful.",
-        "copyright": "Mr Romchi. All rights reserved.",
+        "copyright": "Grand Window. All rights reserved.",
         "menu": "Menu",
         "call": "Contact"
-    },
-    "pvx": {
-        "title": "Product Description"
     },
     "productDescriptions": {
         "pvx": {
@@ -123,5 +120,8 @@
             "peregorodka": "High-quality metal profiles that open up your interior.",
             "zimniy_sad": "The best and safest solution for an enclosed glazed area."
         }
+    },
+    "productDescription": {
+        "title": "Product Description"
     }
 }

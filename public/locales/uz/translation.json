@@ -8,7 +8,7 @@
     },
     "header": {
         "title": "Uyingiz uchun <br /> <highlight>Mukammal Sifat</highlight>",
-        "subtitle": "Mr Romchi brendi sizga eng zamonaviy va sifatli eshik va romlarini taqdim etadi. O'z uyingizni ishonchli qo'llarga topshiring.",
+        "subtitle": "Grand Window brendi sizga eng zamonaviy va sifatli eshik va romlarini taqdim etadi. O'z uyingizni ishonchli qo'llarga topshiring.",
         "premium": "Premium Rom va Eshiklar",
         "catalog": "Katalogni ko‘rish",
         "contact": "Bog'lanish"
@@ -56,7 +56,7 @@
     "about": {
         "miniTitle": "Kompaniya haqida",
         "title": "Biz haqimizda",
-        "subtitle": "Mr Romchi kompaniyasi ko'p yillardan buyon bozorda o'z o'rniga ega bo'lgan, sifat va ishonch timsoliga aylangan korxonadir. Bizning maqsadimiz – har bir xonadonga qulaylik va zamonaviy ko'rinish olib kirish.",
+        "subtitle": "Grand Window kompaniyasi ko'p yillardan buyon bozorda o'z o'rniga ega bo'lgan, sifat va ishonch timsoliga aylangan korxonadir. Bizning maqsadimiz – har bir xonadonga qulaylik va zamonaviy ko'rinish olib kirish.",
         "yearWork": "Yillik tajriba",
         "clients": "Mamnun mijozlar",
         "quality": "Sifat kafolati",
@@ -76,8 +76,8 @@
         "successToast": "Murojaatingiz uchun rahmat! Tez orada siz bilan bog'lanamiz."
     },
     "footer": {
-        "about": "Mr Romchi — sifatli eshik va romlar bo‘yicha mutaxassis.",
-        "copyright": "Mr Romchi. Barcha huquqlar himoyalangan.",
+        "about": "Grand Window — sifatli eshik va romlar bo‘yicha mutaxassis.",
+        "copyright": "Grand Window. Barcha huquqlar himoyalangan.",
         "menu": "Menyu",
         "call": "Bog'lanish"
     },

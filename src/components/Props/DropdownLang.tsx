@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import i18n from 'i18next';
+import Image from 'next/image';
 
 interface Country {
     name: string;
@@ -15,31 +16,39 @@ const countries: Country[] = [
     { name: 'EN', code: "en", flag: '/flags/en.png' },
 ]
 
-const DropdownLang: React.FC = () => {
+const isLanguageCode = (value: string | null): value is Country['code'] =>
+    countries.some((country) => country.code === value);
 
-    const [lang, setLang] = useState<string>(i18n.language || 'uz');
+const DropdownLang: React.FC = () => {
+    const [lang, setLang] = useState<Country['code']>(() => {
+        if (typeof window === 'undefined') {
+            return isLanguageCode(i18n.language) ? i18n.language : 'uz';
+        }
+
+        const savedLang = localStorage.getItem('lang');
+        return isLanguageCode(savedLang) ? savedLang : 'uz';
+    });
+    const selectedCountry = countries.find(c => c.code === lang) ?? countries[0];
 
     useEffect(() => {
-        const savedLang = localStorage.getItem('lang');
-        if (savedLang) {
-            i18n.changeLanguage(savedLang);
-            setLang(savedLang);
-        }
-    }, []);
+        i18n.changeLanguage(lang);
+        localStorage.setItem('lang', lang);
+    }, [lang]);
 
     const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        const selectedLang = e.target.value;
+        const selectedLang = e.target.value as Country['code'];
         setLang(selectedLang);
-        i18n.changeLanguage(selectedLang);
-        localStorage.setItem('lang', selectedLang);
     };
 
 
     return (
         <div className="flex items-center gap-1">
-            <img
-                src={countries.find(c => c.code === lang)?.flag}
+            <Image
+                src={selectedCountry.flag}
                 alt={lang}
+                width={24}
+                height={16}
+                className="h-4 w-6 object-cover"
             />
 
             <select

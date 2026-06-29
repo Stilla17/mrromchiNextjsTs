@@ -43,7 +43,7 @@ const AboutUs: React.FC = () => {
                             <div className="mt-6 flex items-center justify-between">
                                 <div>
                                     <h3 className="text-xl font-bold">
-                                        Mr Romchi Team
+                                        Grand Window Team
                                     </h3>
                                     <p className="text-sm text-gray-500">
                                         {t('about.team')}
