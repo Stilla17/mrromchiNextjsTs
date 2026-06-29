@@ -1,0 +1,127 @@
+{
+    "nav": {
+        "home": "Bosh sahifa",
+        "products": "Maxsulotlar",
+        "services": "Xizmatlar",
+        "about": "Biz haqimizda",
+        "contact": "Kontakt"
+    },
+    "header": {
+        "title": "Uyingiz uchun <br /> <highlight>Mukammal Sifat</highlight>",
+        "subtitle": "Grand Window brendi sizga eng zamonaviy va sifatli eshik va romlarini taqdim etadi. O'z uyingizni ishonchli qo'llarga topshiring.",
+        "premium": "Premium Rom va Eshiklar",
+        "catalog": "Katalogni ko‘rish",
+        "contact": "Bog'lanish"
+    },
+    "products": {
+        "title": "Bizning Mahsulotlar",
+        "subtitle": "Yuqori sifatli PVX va Alyuminiy profillari",
+        "pvx": "PVX Profillar",
+        "alumin": "Alyumin Profillar",
+        "sliding": "Surma Profillar",
+        "fasad": "Fasad Profillar",
+        "newSystem": "Yangi Sistema",
+        "others": "Boshqa Maxsulotlar"
+    },
+    "services": {
+        "title": "Bizning Xizmatlar",
+        "subtitle": "Biz sizga to'liq sikldagi xizmatlarni taklif etamiz",
+        "items": {
+            "1": {
+                "title": "Eshik va rom yasash",
+                "description": "Sizning o'lchamlaringiz va talablaringiz asosida individual buyurtma."
+            },
+            "2": {
+                "title": "Tamirlash",
+                "description": "Eski romlarni ta'mirlash va yangilash xizmati."
+            },
+            "3": {
+                "title": "O'lchash",
+                "description": "Mutaxassislarimiz bepul borib o'lchov ishlarini amalga oshiradilar."
+            },
+            "4": {
+                "title": "O'rnatib berish",
+                "description": "Tajribali ustalarimiz tomonidan sifatli o'rnatish xizmati."
+            },
+            "5": {
+                "title": "Texnik maslahat",
+                "description": "Materiallar va dizayn bo'yicha bepul professional maslahat."
+            },
+            "6": {
+                "title": "Yetkazib berish",
+                "description": "Tayyor mahsulotlarni manzilingizga xavfsiz yetkazib beramiz."
+            }
+        }
+    },
+    "about": {
+        "miniTitle": "Kompaniya haqida",
+        "title": "Biz haqimizda",
+        "subtitle": "Grand Window kompaniyasi ko'p yillardan buyon bozorda o'z o'rniga ega bo'lgan, sifat va ishonch timsoliga aylangan korxonadir. Bizning maqsadimiz – har bir xonadonga qulaylik va zamonaviy ko'rinish olib kirish.",
+        "yearWork": "Yillik tajriba",
+        "clients": "Mamnun mijozlar",
+        "quality": "Sifat kafolati",
+        "time": "Qo'llab-quvvatlash",
+        "team": "Professionallar jamoasi"
+    },
+    "customers": {
+        "title": "Bizning Mijozlar",
+        "subtitle": "Bizga ishonch bildirgan kompaniyalar"
+    },
+    "contact": {
+        "title": "Bepul xisoblash",
+        "subtitle": "Eshik va romlar uchun bepul hisob-kitob va dizayn xizmati! Telefon raqamingizni qoldiring, biz siz bilan aloqaga chiqamiz.",
+        "address": "Manzil",
+        "phone": "Telefon",
+        "button": "Yuborish",
+        "successToast": "Murojaatingiz uchun rahmat! Tez orada siz bilan bog'lanamiz."
+    },
+    "footer": {
+        "about": "Grand Window — sifatli eshik va romlar bo‘yicha mutaxassis.",
+        "copyright": "Grand Window. Barcha huquqlar himoyalangan.",
+        "menu": "Menyu",
+        "call": "Bog'lanish"
+    },
+    "productDescription": {
+        "title": "Product Description"
+    },
+    "productDescriptions": {
+        "pvx": {
+            "6000_trio": "Xonadoningiz uchun narxiga sifati mos keluvchi universal profil.",
+            "6000_qvt": "Hamyoningizni tejovchi, iqtisodiy ammo sifatli profil.",
+            "7000_engelberg": "Premium profillarimizdan biri.",
+            "8000_engelberg": "Eng yuqori darajadagi premium sifatli profil."
+        },
+        "alumin": {
+            "aldox": "Hamyonbop va universal profil.",
+            "champion": "Ishonchli va chidamli profil.",
+            "termo_7000": "Zamon talabiga mos, mustahkam profil.",
+            "termo_5700": "Yuqori sifatning iqtisodiy ko‘rinishi.",
+            "termo_9800": "Premium sinfdagi qalin va baquvvat alyumin profil."
+        },
+        "sliding": {
+            "bkx_65": "Juda baquvvat suriladigan profil.",
+            "bkx_38": "Iqtisodiy suriladigan profil."
+        },
+        "fasad": {
+            "bkf_48": "Tashqi fasad uchun eng zo'r profil.",
+            "bkf_50": "Yangi zamonaviy, juda mustahkam profil.",
+            "pauk_sistema": "O‘ziga xos dizaynga ega sistema."
+        },
+        "newSystem": {
+            "rolstavniy": "Zamonaviy darvozalar.",
+            "sekshionniy": "Zamonaviy darvozalar.",
+            "sensor": "O‘zi harakatlanuvchi sensor sistema.",
+            "gelatina": "Zamon talabidagi sistema.",
+            "pergola": "Zamon talabidagi sistema.",
+            "markiza": "Zamon talabidagi sistema."
+        },
+        "others": {
+            "san_uzel": "Uyingiz uchun eng zo'r variantlar.",
+            "perila": "Oyna va profillardan o‘zgacha to‘siqlar.",
+            "podokonnik": "Xonangiz uchun eng kerakli detal.",
+            "moskitnaya_setka": "Yozgi mavsum uchun zaruriy himoya vositasi.",
+            "peregorodka": "Uyingiz interyerini ochuvchi sifatli metall profillar.",
+            "zimniy_sad": "Yopiq oynali maydon uchun eng zo'r va xavfsiz yechim."
+        }
+    }
+}

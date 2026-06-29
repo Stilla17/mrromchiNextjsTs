@@ -19,24 +19,18 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!phone.trim()) return;
+
+    const message = `Yangi murojaat. Telefon raqam: ${phone}`;
+
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ phone }),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to send contact request");
-      }
-
+      await navigator.clipboard.writeText(message);
       toast.success(t("contact.successToast"));
-      setPhone("");
     } catch (error) {
-      console.error("Error sending message:", error);
+      console.error("Error copying message:", error);
     }
+
+    openExternalLink("https://t.me/grand_window");
+    setPhone("");
   };
 
   return (

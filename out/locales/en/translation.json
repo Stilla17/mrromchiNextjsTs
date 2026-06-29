@@ -1,0 +1,127 @@
+{
+    "nav": {
+        "home": "Home",
+        "products": "Products",
+        "services": "Services",
+        "about": "About Us",
+        "contact": "Contact"
+    },
+    "header": {
+        "title": "Perfect quality <br /> <highlight>For your home</highlight>",
+        "subtitle": "The Grand Window brand offers you the most modern and high-quality doors and frames. Entrust your home to reliable hands.",
+        "premium": "Premium Frames and Doors",
+        "catalog": "View Catalog",
+        "contact": "Contact"
+    },
+    "products": {
+        "pvx": "PVC Profiles",
+        "alumin": "Aluminum Profiles",
+        "sliding": "Sliding Profiles",
+        "fasad": "Facade Profiles",
+        "newSystem": "New System",
+        "others": "Other Products",
+        "title": "Our Products",
+        "subtitle": "High-quality PVC and Aluminum profiles"
+    },
+    "services": {
+        "title": "Our Services",
+        "subtitle": "We offer you full-cycle services",
+        "items": {
+            "1": {
+                "title": "Door and Frame Manufacturing",
+                "description": "Custom orders based on your dimensions and requirements."
+            },
+            "2": {
+                "title": "Repair",
+                "description": "Service for repairing and updating old frames."
+            },
+            "3": {
+                "title": "Measurement",
+                "description": "Our specialists will come and perform measurements for free."
+            },
+            "4": {
+                "title": "Installation",
+                "description": "Quality installation service by experienced craftsmen."
+            },
+            "5": {
+                "title": "Technical Consultation",
+                "description": "Free professional advice on materials and design."
+            },
+            "6": {
+                "title": "Delivery",
+                "description": "We deliver finished products safely to your address."
+            }
+        }
+    },
+    "about": {
+        "miniTitle": "About the Company",
+        "title": "About Us",
+        "subtitle": "The Grand Window company has held its place in the market for many years, becoming a symbol of quality and reliability. Our goal is to bring comfort and a modern look to every home.",
+        "yearWork": "Years of Experience",
+        "clients": "Satisfied Clients",
+        "quality": "Quality Guarantee",
+        "time": "Customer Support",
+        "team": "Professional Team"
+    },
+    "customers": {
+        "title": "Our Customers",
+        "subtitle": "Companies that trust us"
+    },
+    "contact": {
+        "title": "Free Calculation",
+        "subtitle": "Free calculation and design service for doors and frames! Leave your phone number, we will contact you.",
+        "address": "Address",
+        "phone": "Phone",
+        "button": "Send",
+        "successToast": "Thank you for your inquiry! We will contact you shortly."
+    },
+    "footer": {
+        "about": "Quality and reliability for every home. Our goal is to make your home more comfortable and beautiful.",
+        "copyright": "Grand Window. All rights reserved.",
+        "menu": "Menu",
+        "call": "Contact"
+    },
+    "productDescriptions": {
+        "pvx": {
+            "6000_trio": "A universal profile offering the right balance of quality and price for your home.",
+            "6000_qvt": "An economical but high-quality profile that helps you save money.",
+            "7000_engelberg": "One of our premium profiles.",
+            "8000_engelberg": "A top-level premium quality profile."
+        },
+        "alumin": {
+            "aldox": "Affordable and versatile profile.",
+            "champion": "A reliable and durable profile.",
+            "termo_7000": "A sturdy profile that meets modern requirements.",
+            "termo_5700": "High quality with an economical appearance.",
+            "termo_9800": "Thick and robust aluminum profile of premium class."
+        },
+        "sliding": {
+            "bkx_65": "Very strong sliding profile.",
+            "bkx_38": "Economical sliding profile."
+        },
+        "fasad": {
+            "bkf_48": "Top profile for exterior facades.",
+            "bkf_50": "New, modern and very sturdy profile.",
+            "pauk_sistema": "A system with a unique design."
+        },
+        "newSystem": {
+            "rolstavniy": "Modern gates.",
+            "sekshionniy": "Modern gates.",
+            "sensor": "A self-operating sensor system.",
+            "gelatina": "A system that meets modern demands.",
+            "pergola": "A system that meets modern demands.",
+            "markiza": "A system that meets modern demands."
+        },
+        "others": {
+            "san_uzel": "Top options for your home.",
+            "perila": "Unique partitions made of glass and profiles.",
+            "podokonnik": "A must-have detail for your space.",
+            "moskitnaya_setka": "An essential protective device for the summer season.",
+            "peregorodka": "High-quality metal profiles that open up your interior.",
+            "zimniy_sad": "The best and safest solution for an enclosed glazed area."
+        }
+    },
+    "productDescription": {
+        "title": "Product Description"
+    }
+}
