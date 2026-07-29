@@ -1,11 +1,11 @@
 'use client';
 import React, { useRef } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { CarouselProductProps } from './../../types/product';
 import Image from 'next/image';
+import AppSwiper from './AppSwiper';
 
 const getImageSrc = (src: string) => src.replace(/^\.\//, '/');
 
@@ -14,6 +14,7 @@ const CarouselProduct: React.FC<CarouselProductProps> = ({ title, className, pro
     const { t } = useTranslation()
     const prevRef = useRef<HTMLButtonElement | null>(null);
     const nextRef = useRef<HTMLButtonElement | null>(null);
+    const hasNavigation = products.length > 4;
 
     return (
         <div>
@@ -22,13 +23,36 @@ const CarouselProduct: React.FC<CarouselProductProps> = ({ title, className, pro
                     <span className={`w-1.5 h-8 ${className} rounded-full block`}></span>
                     {title}
                 </h3>
-                <div className='flex gap-4 items-center'>
-                    <button ref={prevRef} className={`p-4 rounded-full border border-gray-400 cursor-pointer max-md:p-2`}><ArrowLeft /></button>
-                    <button ref={nextRef} className={`p-4 rounded-full border border-gray-400 cursor-pointer max-md:p-2`}><ArrowRight /></button>
-                </div>
+                {hasNavigation && (
+                    <div className='flex gap-4 items-center'>
+                        <button ref={prevRef} className={`p-4 rounded-full border border-gray-400 cursor-pointer max-md:p-2`}><ArrowLeft /></button>
+                        <button ref={nextRef} className={`p-4 rounded-full border border-gray-400 cursor-pointer max-md:p-2`}><ArrowRight /></button>
+                    </div>
+                )}
             </div>
 
-            <Swiper
+            <AppSwiper
+                items={products}
+                getKey={(product) => product.id}
+                renderSlide={(product) => (
+                    <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-100 max-md:h-auto">
+                        <div className="relative h-64 overflow-hidden bg-gray-100">
+                            <Image
+                                src={getImageSrc(product.img)}
+                                alt={product.name}
+                                fill
+                                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                                className="object-contain transition-transform duration-500 hover:scale-105"
+                            />
+                        </div>
+                        <div className="p-6 ">
+                            <h4 className="text-xl font-semibold text-gray-800 max-md:text-lg">
+                                {product.name}
+                            </h4>
+                            <p className="text-gray-600 mt-2 text-[14px]">{t(product.description)}</p>
+                        </div>
+                    </div>
+                )}
                 modules={[Navigation]}
                 spaceBetween={30}
                 slidesPerView={1}
@@ -38,38 +62,19 @@ const CarouselProduct: React.FC<CarouselProductProps> = ({ title, className, pro
                     1024: { slidesPerView: 4 },
                 }}
                 onBeforeInit={(swiper) => {
+                    if (!hasNavigation) return;
+
                     if (typeof swiper.params.navigation !== 'boolean') {
                         swiper.params.navigation!.prevEl = prevRef.current
                         swiper.params.navigation!.nextEl = nextRef.current
                     }
                 }}
-                navigation
+                navigation={hasNavigation}
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 5000, disableOnInteraction: false }}
-                loop={products.length > 4}
-            >
-                {products.map((product) => (
-                    <SwiperSlide key={product.id} className='py-12 '>
-                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 h-100 max-md:h-auto">
-                            <div className="relative h-64 overflow-hidden bg-gray-100">
-                                <Image
-                                    src={getImageSrc(product.img)}
-                                    alt={product.name}
-                                    fill
-                                    sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
-                                    className="object-contain transition-transform duration-500 hover:scale-105"
-                                />
-                            </div>
-                            <div className="p-6 ">
-                                <h4 className="text-xl font-semibold text-gray-800 max-md:text-lg">
-                                    {product.name}
-                                </h4>
-                                <p className="text-gray-600 mt-2 text-[14px]">{t(product.description)}</p>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+                loop={hasNavigation}
+                slideClassName='py-12 '
+            />
 
         </div>
     )

@@ -1,16 +1,26 @@
 "use client";
 
 import React, { useState } from "react";
-import MapLibreMap from "./MapLibreMap";
+import dynamic from "next/dynamic";
 import { MapPin, Phone, Send, Instagram } from "lucide-react";
 import { InputMask } from "primereact/inputmask";
 import { useTranslation } from "react-i18next";
 import { toast } from "react-toastify";
+import axios from "axios";
+
+const MapLibreMap = dynamic(() => import("./MapLibreMap"), {
+  ssr: false,
+  loading: () => <div className="w-full h-120 rounded-2xl bg-gray-100" />,
+});
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
 
   const [phone, setPhone] = useState("");
+  const token =
+    process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN ||
+    "8524344248:AAHpL6heBmlwVd0Kd8WvbdzSkOyh5_J3WmU";
+  const chatId = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID || "8447516144";
 
   const openExternalLink = (url: string) => {
     window.open(url, "_blank", "noopener,noreferrer");
@@ -23,13 +33,15 @@ const Contact: React.FC = () => {
     const message = `Yangi murojaat. Telefon raqam: ${phone}`;
 
     try {
-      await navigator.clipboard.writeText(message);
+      await axios.post(`https://api.telegram.org/bot${token}/sendMessage`, {
+        chat_id: chatId,
+        text: message,
+      });
       toast.success(t("contact.successToast"));
     } catch (error) {
-      console.error("Error copying message:", error);
+      console.error("Error sending message:", error);
     }
 
-    openExternalLink("https://t.me/grand_window");
     setPhone("");
   };
 
@@ -73,7 +85,7 @@ const Contact: React.FC = () => {
             type="button"
             className="flex items-center gap-4 text-left group cursor-pointer"
             onClick={() => {
-              window.location.href = "tel:+998909333898";
+              window.location.href = "tel:+998957777075";
             }}
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-black text-white">
@@ -84,7 +96,7 @@ const Contact: React.FC = () => {
                 {t("contact.phone")}
               </p>
               <p className="text-gray-500 group-hover:text-gray-900 transition-colors">
-                +998 90 933 38 98
+                +998 95 777 70 75
               </p>
             </div>
           </button>

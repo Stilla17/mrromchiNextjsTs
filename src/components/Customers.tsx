@@ -1,8 +1,8 @@
 'use client'
-import { Swiper, SwiperSlide } from "swiper/react";
 import { clients } from "@/data/products";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
+import AppSwiper from "./Props/AppSwiper";
 
 const getImageSrc = (src: string) => src.replace(/^\.\//, '/');
 
@@ -13,7 +13,20 @@ const Customers: React.FC = () => {
             <h2 className='text-3xl font-bold tracking-tight text-primary text-center md:text-5xl'>{t("customers.title")}</h2>
             <p className='mt-4 text-lg text-gray-600 text-center mb-12'>{t("customers.subtitle")}</p>
 
-            <Swiper
+            <AppSwiper
+                items={clients}
+                getKey={(client) => client.id}
+                renderSlide={(client) => (
+                    <div className="group flex items-center justify-center gap-4 cursor-pointer transition">
+                        <Image
+                            src={getImageSrc(client.img)}
+                            alt={client.name}
+                            width={200}
+                            height={120}
+                            className="h-35 w-auto object-contain"
+                        />
+                    </div>
+                )}
                 spaceBetween={0}
                 slidesPerView={3}
                 loop={true}
@@ -23,21 +36,8 @@ const Customers: React.FC = () => {
                     1024: { slidesPerView: 5 },
                 }}
                 className="flex items-center"
-            >
-                {clients.map((client) => (
-                    <SwiperSlide key={client.id} className="mx-auto">
-                        <div className="group flex items-center justify-center gap-4 cursor-pointer transition">
-                            <Image
-                                src={getImageSrc(client.img)}
-                                alt={client.name}
-                                width={200}
-                                height={120}
-                                className="h-35 w-auto object-contain"
-                            />
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+                slideClassName="mx-auto"
+            />
 
         </section>
     )

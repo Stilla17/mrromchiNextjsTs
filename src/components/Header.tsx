@@ -40,10 +40,10 @@ const Header: React.FC = () => {
             </div>
 
             <a
-              href="tel:+998909333898"
+              href="tel:+998957777075"
               className="rounded-xl bg-black px-5 py-2 text-sm font-semibold text-white hover:bg-gray-900 transition"
             >
-              +998 90 933 38 98
+             +998 95 777 70 75
             </a>
           </div>
 
@@ -71,10 +71,10 @@ const Header: React.FC = () => {
             <div className="mt-4 flex flex-col gap-3">
               <DropdownLang />
               <a
-                href="tel:+998909333898"
+                href="tel:+998957777075"
                 className="rounded-xl bg-black px-4 py-3 text-center text-sm font-semibold text-white"
               >
-                +998 90 933 38 98
+                +998 95 777 70 75
               </a>
             </div>
           </nav>

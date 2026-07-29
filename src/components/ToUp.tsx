@@ -11,7 +11,7 @@ const ToUp: React.FC = () => {
     }
 
     return (
-        <div className='fixed bottom-8 right-8'>
+        <div className='fixed bottom-8 right-8 z-10'>
             <button onClick={scrollTop} className='bg-black cursor-pointer text-white p-3 rounded-full hover:scale-110 transition-transform duration-300 inline-block 
             shadow-md shadow-white'>
                 <ArrowUp size={24} />
