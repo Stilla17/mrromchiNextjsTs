@@ -1,13 +1,15 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
-import i18n from 'i18next';
+import React from 'react';
 import Image from 'next/image';
+import { usePathname, useRouter } from 'next/navigation';
+import { useTranslation } from 'react-i18next';
+import { defaultLocale, isLocale, type Locale } from '@/lib/seo';
 
 interface Country {
     name: string;
     flag: string;
-    code: 'uz' | 'ru' | 'en';
+    code: Locale;
 }
 
 const countries: Country[] = [
@@ -16,28 +18,27 @@ const countries: Country[] = [
     { name: 'EN', code: "en", flag: '/flags/en.png' },
 ]
 
-const isLanguageCode = (value: string | null): value is Country['code'] =>
-    countries.some((country) => country.code === value);
-
 const DropdownLang: React.FC = () => {
-    const [lang, setLang] = useState<Country['code']>(() => {
-        if (typeof window === 'undefined') {
-            return isLanguageCode(i18n.language) ? i18n.language : 'uz';
-        }
-
-        const savedLang = localStorage.getItem('lang');
-        return isLanguageCode(savedLang) ? savedLang : 'uz';
-    });
+    const router = useRouter();
+    const pathname = usePathname();
+    const { i18n } = useTranslation();
+    const routeLocale = pathname.split('/')[1];
+    const lang = isLocale(routeLocale) ? routeLocale : defaultLocale;
     const selectedCountry = countries.find(c => c.code === lang) ?? countries[0];
 
-    useEffect(() => {
-        i18n.changeLanguage(lang);
-        localStorage.setItem('lang', lang);
-    }, [lang]);
-
     const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        const selectedLang = e.target.value as Country['code'];
-        setLang(selectedLang);
+        const selectedLang = e.target.value;
+        if (!isLocale(selectedLang)) return;
+
+        const segments = pathname.split('/').filter(Boolean);
+        if (segments.length && isLocale(segments[0])) {
+            segments[0] = selectedLang;
+        } else {
+            segments.unshift(selectedLang);
+        }
+
+        void i18n.changeLanguage(selectedLang);
+        router.push(`/${segments.join('/')}${window.location.hash}`);
     };
 
 

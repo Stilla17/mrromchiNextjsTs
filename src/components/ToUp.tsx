@@ -1,12 +1,9 @@
 'use client'
 import { ArrowUp } from 'lucide-react'
-import { useRouter } from 'next/navigation'
 import React from 'react'
 
 const ToUp: React.FC = () => {
-    const router = useRouter()
     const scrollTop = () => {
-        router.push('/')
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
