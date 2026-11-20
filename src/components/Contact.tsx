@@ -81,12 +81,9 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          <button
-            type="button"
+          <a
+            href="tel:+998957777075"
             className="flex items-center gap-4 text-left group cursor-pointer"
-            onClick={() => {
-              window.location.href = "tel:+998957777075";
-            }}
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-black text-white">
               <Phone size={22} />
@@ -99,7 +96,7 @@ const Contact: React.FC = () => {
                 +998 95 777 70 75
               </p>
             </div>
-          </button>
+          </a>
 
           <button
             type="button"
